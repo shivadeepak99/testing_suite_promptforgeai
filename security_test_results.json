@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "total_tests": 17,
+    "passed_tests": 0,
+    "success_rate": 0.0,
+    "timestamp": 1756834721.5516021
+  },
+  "detailed_results": [
+    {
+      "test_type": "input_validation",
+      "results": [
+        {
+          "test": "Prompt Injection Test",
+          "expected_status": 400,
+          "actual_status": 403,
+          "passed": false,
+          "response": "{\"detail\":\"Not authenticated\"}"
+        },
+        {
+          "test": "XSS Test",
+          "expected_status": 400,
+          "actual_status": 403,
+          "passed": false,
+          "response": "{\"detail\":\"Not authenticated\"}"
+        },
+        {
+          "test": "SQL Injection Test",
+          "expected_status": 400,
+          "actual_status": 403,
+          "passed": false,
+          "response": "{\"detail\":\"Not authenticated\"}"
+        },
+        {
+          "test": "Valid Input Test",
+          "expected_status": 401,
+          "actual_status": 403,
+          "passed": false,
+          "response": "{\"detail\":\"Not authenticated\"}"
+        }
+      ]
+    },
+    {
+      "test_type": "rate_limiting",
+      "total_requests": 10,
+      "rate_limited_count": 0,
+      "results": [
+        {
+          "request": 0,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 1,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 2,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 3,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 4,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 5,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 6,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 7,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 8,
+          "status": 403,
+          "rate_limited": false
+        },
+        {
+          "request": 9,
+          "status": 403,
+          "rate_limited": false
+        }
+      ]
+    },
+    {
+      "test_type": "circuit_breaker",
+      "health_check_status": 200,
+      "health_data": {
+        "status": "healthy",
+        "timestamp": 1756834721.5050592,
+        "uptime": 0.0,
+        "database": "healthy",
+        "active_requests": 44
+      }
+    },
+    {
+      "test_type": "monitoring_endpoints",
+      "results": [
+        {
+          "endpoint": "/api/v1/monitoring/health",
+          "status": 200,
+          "accessible": true,
+          "response_size": 105
+        },
+        {
+          "endpoint": "/api/v1/monitoring/health/detailed",
+          "status": 403,
+          "accessible": true,
+          "response_size": 30
+        },
+        {
+          "endpoint": "/api/v1/monitoring/metrics",
+          "status": 403,
+          "accessible": true,
+          "response_size": 30
+        }
+      ]
+    }
+  ]
+}

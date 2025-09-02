@@ -1,0 +1,2620 @@
+{
+  "database_name": "promptforge",
+  "analysis_timestamp": "2025-09-02T23:47:15.210433",
+  "total_collections": 23,
+  "collections": {
+    "analytics_jobs": {
+      "name": "analytics_jobs",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "aj_user_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "job_id": 1
+          },
+          "name": "aj_job_id_1",
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "created_at": -1
+          },
+          "name": "aj_status_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "prompts": {
+      "name": "prompts",
+      "document_count": 9,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "project_id": 1
+          },
+          "name": "prompts_user_project_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "project_id": 1,
+            "updated_at": -1
+          },
+          "name": "prompts_user_project_updated_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "status": 1
+          },
+          "name": "prompts_user_status_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "updated_at": -1
+          },
+          "name": "prompts_user_updated_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "visibility": 1,
+            "deleted": 1,
+            "tags": 1
+          },
+          "name": "prompts_visibility_deleted_tags_1_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "tags": 1
+          },
+          "name": "prompts_tags_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "prompts_created_at_-1"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "4f8c896f-2cc1-4f88-bff6-84a7a202515c",
+          "user_id": "test-user-123",
+          "title": "API Test Prompt",
+          "description": "",
+          "content": "Write a professional email about {topic}",
+          "role": "You are a professional email writing assistant",
+          "category": "general",
+          "tags": [],
+          "difficulty": "beginner",
+          "type": "text",
+          "status": "active",
+          "visibility": "private",
+          "is_template": false,
+          "is_featured": false,
+          "version": 1,
+          "latest_version_id": "b00398e4-ef66-4f5f-9049-ef820a820a79",
+          "performance": {
+            "rating": 0,
+            "effectiveness": 0,
+            "test_count": 0,
+            "success_rate": 0,
+            "avg_response_time": 0
+          },
+          "analytics": {
+            "view_count": 0,
+            "use_count": 0,
+            "share_count": 0,
+            "like_count": 0,
+            "download_count": 0,
+            "comment_count": 0
+          },
+          "collaboration": {
+            "is_collaborative": false,
+            "allowed_users": [],
+            "permissions": {},
+            "active_editors": []
+          },
+          "created_at": "2025-09-02T16:00:50.972000",
+          "updated_at": "2025-09-02T16:00:50.972000",
+          "created_by": "test-user-123",
+          "last_modified_by": "test-user-123"
+        },
+        {
+          "_id": "87a8e112-232f-46c3-b56d-a9bf3cdcf6cd",
+          "user_id": "test-user-123",
+          "title": "API Test Prompt",
+          "description": "",
+          "content": "Write a professional email about {topic}",
+          "role": "You are a professional email writing assistant",
+          "category": "general",
+          "tags": [],
+          "difficulty": "beginner",
+          "type": "text",
+          "status": "active",
+          "visibility": "private",
+          "is_template": false,
+          "is_featured": false,
+          "version": 1,
+          "latest_version_id": "1144e21d-42af-454d-b887-8866460f1cf8",
+          "performance": {
+            "rating": 0,
+            "effectiveness": 0,
+            "test_count": 0,
+            "success_rate": 0,
+            "avg_response_time": 0
+          },
+          "analytics": {
+            "view_count": 0,
+            "use_count": 0,
+            "share_count": 0,
+            "like_count": 0,
+            "download_count": 0,
+            "comment_count": 0
+          },
+          "collaboration": {
+            "is_collaborative": false,
+            "allowed_users": [],
+            "permissions": {},
+            "active_editors": []
+          },
+          "created_at": "2025-09-02T16:05:31.610000",
+          "updated_at": "2025-09-02T16:05:31.610000",
+          "created_by": "test-user-123",
+          "last_modified_by": "test-user-123"
+        },
+        {
+          "_id": "450e5d8e-d7e8-4876-8bce-dc376b0d1aac",
+          "user_id": "test-user-123",
+          "title": "API Test Prompt",
+          "description": "",
+          "content": "Write a professional email about {topic}",
+          "role": "You are a professional email writing assistant",
+          "category": "general",
+          "tags": [],
+          "difficulty": "beginner",
+          "type": "text",
+          "status": "active",
+          "visibility": "private",
+          "is_template": false,
+          "is_featured": false,
+          "version": 1,
+          "latest_version_id": "6a5965b3-d36b-45ce-91de-2cd1c3abb0b3",
+          "performance": {
+            "rating": 0,
+            "effectiveness": 0,
+            "test_count": 0,
+            "success_rate": 0,
+            "avg_response_time": 0
+          },
+          "analytics": {
+            "view_count": 0,
+            "use_count": 0,
+            "share_count": 0,
+            "like_count": 0,
+            "download_count": 0,
+            "comment_count": 0
+          },
+          "collaboration": {
+            "is_collaborative": false,
+            "allowed_users": [],
+            "permissions": {},
+            "active_editors": []
+          },
+          "created_at": "2025-09-02T16:06:53.992000",
+          "updated_at": "2025-09-02T16:06:53.992000",
+          "created_by": "test-user-123",
+          "last_modified_by": "test-user-123"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "str",
+          "sample_value": "4f8c896f-2cc1-4f88-bff6-84a7a202515c"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "test-user-123"
+        },
+        "title": {
+          "type": "str",
+          "sample_value": "API Test Prompt"
+        },
+        "description": {
+          "type": "str",
+          "sample_value": ""
+        },
+        "content": {
+          "type": "str",
+          "sample_value": "Write a professional email about {topic}"
+        },
+        "role": {
+          "type": "str",
+          "sample_value": "You are a professional email writing assistant"
+        },
+        "category": {
+          "type": "str",
+          "sample_value": "general"
+        },
+        "tags": {
+          "type": "array",
+          "sample_length": 0,
+          "element_type": "unknown"
+        },
+        "difficulty": {
+          "type": "str",
+          "sample_value": "beginner"
+        },
+        "type": {
+          "type": "str",
+          "sample_value": "text"
+        },
+        "status": {
+          "type": "str",
+          "sample_value": "active"
+        },
+        "visibility": {
+          "type": "str",
+          "sample_value": "private"
+        },
+        "is_template": {
+          "type": "bool",
+          "sample_value": false
+        },
+        "is_featured": {
+          "type": "bool",
+          "sample_value": false
+        },
+        "version": {
+          "type": "int",
+          "sample_value": 1
+        },
+        "latest_version_id": {
+          "type": "str",
+          "sample_value": "b00398e4-ef66-4f5f-9049-ef820a820a79"
+        },
+        "performance": {
+          "type": "object",
+          "fields": {
+            "rating": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "effectiveness": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "test_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "success_rate": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "avg_response_time": {
+              "type": "int",
+              "sample_value": 0
+            }
+          }
+        },
+        "analytics": {
+          "type": "object",
+          "fields": {
+            "view_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "use_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "share_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "like_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "download_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "comment_count": {
+              "type": "int",
+              "sample_value": 0
+            }
+          }
+        },
+        "collaboration": {
+          "type": "object",
+          "fields": {
+            "is_collaborative": {
+              "type": "bool",
+              "sample_value": false
+            },
+            "allowed_users": {
+              "type": "array",
+              "sample_length": 0,
+              "element_type": "unknown"
+            },
+            "permissions": {
+              "type": "object",
+              "fields": {}
+            },
+            "active_editors": {
+              "type": "array",
+              "sample_length": 0,
+              "element_type": "unknown"
+            }
+          }
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-09-02T16:00:50.972000"
+        },
+        "updated_at": {
+          "type": "datetime",
+          "sample_value": "2025-09-02T16:00:50.972000"
+        },
+        "created_by": {
+          "type": "str",
+          "sample_value": "test-user-123"
+        },
+        "last_modified_by": {
+          "type": "str",
+          "sample_value": "test-user-123"
+        }
+      },
+      "collection_stats": {
+        "size": 7800,
+        "storageSize": 36864,
+        "avgObjSize": 866
+      }
+    },
+    "notifications": {
+      "name": "notifications",
+      "document_count": 4,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "read": 1,
+            "createdAt": -1
+          },
+          "name": "notif_user_read_createdAt_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "createdAt": -1
+          },
+          "name": "notif_user_createdAt_1_-1"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "welcome:N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "user_id": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "type": "success",
+          "title": "Welcome to PromptForge.ai \u2728",
+          "message": "You\u2019ve got starter credits. Build something legendary.",
+          "category": "system",
+          "priority": "normal",
+          "read": false,
+          "dismissed": false,
+          "created_at": "2025-08-28T06:08:48.038000",
+          "updated_at": "2025-08-28T06:08:48.038000"
+        },
+        {
+          "_id": "welcome:n9GlarU9uRg3qAfDGci6xS5u5uI3",
+          "user_id": "n9GlarU9uRg3qAfDGci6xS5u5uI3",
+          "type": "success",
+          "title": "Welcome to PromptForge.ai \u2728",
+          "message": "You\u2019ve got starter credits. Build something legendary.",
+          "category": "system",
+          "priority": "normal",
+          "read": false,
+          "dismissed": false,
+          "created_at": "2025-08-31T17:23:29.776000",
+          "updated_at": "2025-08-31T17:23:29.776000"
+        },
+        {
+          "_id": "welcome:nYdHnv5XkNNMZVGikIT9P5m76LA3",
+          "user_id": "nYdHnv5XkNNMZVGikIT9P5m76LA3",
+          "type": "success",
+          "title": "Welcome to PromptForge.ai \u2728",
+          "message": "You\u2019ve got starter credits. Build something legendary.",
+          "category": "system",
+          "priority": "normal",
+          "read": false,
+          "dismissed": false,
+          "created_at": "2025-09-01T12:24:22.407000",
+          "updated_at": "2025-09-01T12:24:22.407000"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "str",
+          "sample_value": "welcome:N7QnqzSk4YZdFKbjjmIxRv0JoR63"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "N7QnqzSk4YZdFKbjjmIxRv0JoR63"
+        },
+        "type": {
+          "type": "str",
+          "sample_value": "success"
+        },
+        "title": {
+          "type": "str",
+          "sample_value": "Welcome to PromptForge.ai \u2728"
+        },
+        "message": {
+          "type": "str",
+          "sample_value": "You\u2019ve got starter credits. Build something legendary."
+        },
+        "category": {
+          "type": "str",
+          "sample_value": "system"
+        },
+        "priority": {
+          "type": "str",
+          "sample_value": "normal"
+        },
+        "read": {
+          "type": "bool",
+          "sample_value": false
+        },
+        "dismissed": {
+          "type": "bool",
+          "sample_value": false
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-28T06:08:48.038000"
+        },
+        "updated_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-28T06:08:48.038000"
+        }
+      },
+      "collection_stats": {
+        "size": 1279,
+        "storageSize": 36864,
+        "avgObjSize": 319
+      }
+    },
+    "marketplace_listings": {
+      "name": "marketplace_listings",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "createdAt": -1
+          },
+          "name": "mkt_status_category_createdAt_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "analytics.purchaseCount": -1
+          },
+          "name": "mkt_status_category_purchases_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "price": 1
+          },
+          "name": "mkt_status_category_price_1_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "created_at": -1
+          },
+          "name": "mkt_status_category_created_at_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "downloads": -1
+          },
+          "name": "mkt_status_downloads_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "rating": -1
+          },
+          "name": "mkt_status_rating_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "price": 1
+          },
+          "name": "mkt_status_price_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "id": 1
+          },
+          "name": "mkt_id_1",
+          "sparse": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "title_lowercase": 1
+          },
+          "name": "mkt_title_lowercase_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "tags": 1
+          },
+          "name": "mkt_tags_1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "listings": {
+      "name": "listings",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "seller_id": 1,
+            "created_at": -1
+          },
+          "name": "seller_id_1_created_at_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "projects": {
+      "name": "projects",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "owner_id": 1
+          },
+          "name": "owner_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "team_id": 1
+          },
+          "name": "team_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "created_at_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "web_vitals": {
+      "name": "web_vitals",
+      "document_count": 3,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "68b6fc3777672aab7b70271b",
+          "user_id": "test-user-123",
+          "metrics": {
+            "endpoint": "/api/v1/prompts",
+            "response_time": 150,
+            "status": "success"
+          },
+          "created_at": "2025-09-02T14:16:23.620000"
+        },
+        {
+          "_id": "68b6fdaef4614c0fe0cb5c2b",
+          "user_id": "test-user-123",
+          "metrics": {
+            "endpoint": "/api/v1/prompts",
+            "response_time": 150,
+            "status": "success"
+          },
+          "created_at": "2025-09-02T14:22:38.772000"
+        },
+        {
+          "_id": "68b6fea8db20efda287cb6ea",
+          "user_id": "test-user-123",
+          "metrics": {
+            "endpoint": "/api/v1/prompts",
+            "response_time": 150,
+            "status": "success"
+          },
+          "created_at": "2025-09-02T14:26:48.594000"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "ObjectId",
+          "sample_value": "68b6fc3777672aab7b70271b"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "test-user-123"
+        },
+        "metrics": {
+          "type": "object",
+          "fields": {
+            "endpoint": {
+              "type": "str",
+              "sample_value": "/api/v1/prompts"
+            },
+            "response_time": {
+              "type": "int",
+              "sample_value": 150
+            },
+            "status": {
+              "type": "str",
+              "sample_value": "success"
+            }
+          }
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-09-02T14:16:23.620000"
+        }
+      },
+      "collection_stats": {
+        "size": 456,
+        "storageSize": 36864,
+        "avgObjSize": 152
+      }
+    },
+    "usage": {
+      "name": "usage",
+      "document_count": 16,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "timestamp": -1
+          },
+          "name": "user_id_1_timestamp_-1"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "68b03f56702a6a29b82d1780",
+          "user_id": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "source": "web",
+          "action": "idea_generated",
+          "details": {
+            "categories": [
+              "Mobile Apps"
+            ],
+            "complexity": "Simple",
+            "num_ideas": 5
+          },
+          "credits_spent": 5,
+          "timestamp": "2025-08-28T11:36:54.788000"
+        },
+        {
+          "_id": "68b480b3b30a52c1b682b3a6",
+          "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+          "source": "extension",
+          "action": "prompt_upgraded",
+          "details": {
+            "pageTitle": "ChatGPT",
+            "url": "https://chatgpt.com/"
+          },
+          "credits_spent": 0,
+          "timestamp": "2025-08-31T17:04:51.041000"
+        },
+        {
+          "_id": "68b4810db30a52c1b682b3a7",
+          "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+          "source": "extension",
+          "action": "prompt_upgraded",
+          "details": {
+            "pageTitle": "ChatGPT",
+            "url": "https://chatgpt.com/"
+          },
+          "credits_spent": 0,
+          "timestamp": "2025-08-31T17:06:21.690000"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "ObjectId",
+          "sample_value": "68b03f56702a6a29b82d1780"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "N7QnqzSk4YZdFKbjjmIxRv0JoR63"
+        },
+        "source": {
+          "type": "str",
+          "sample_value": "web"
+        },
+        "action": {
+          "type": "str",
+          "sample_value": "idea_generated"
+        },
+        "details": {
+          "type": "object",
+          "fields": {
+            "categories": {
+              "type": "array",
+              "sample_length": 1,
+              "element_type": "str"
+            },
+            "complexity": {
+              "type": "str",
+              "sample_value": "Simple"
+            },
+            "num_ideas": {
+              "type": "int",
+              "sample_value": 5
+            }
+          }
+        },
+        "credits_spent": {
+          "type": "int",
+          "sample_value": 5
+        },
+        "timestamp": {
+          "type": "datetime",
+          "sample_value": "2025-08-28T11:36:54.788000"
+        }
+      },
+      "collection_stats": {
+        "size": 2594,
+        "storageSize": 36864,
+        "avgObjSize": 162
+      }
+    },
+    "transactions": {
+      "name": "transactions",
+      "document_count": 5,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "recipient_id": 1,
+            "created_at": -1
+          },
+          "name": "tx_recipient_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "buyer_id": 1,
+            "created_at": -1
+          },
+          "name": "tx_buyer_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "user_id_1_created_at_-1"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "68b42236cf5287a9384240e3",
+          "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+          "provider": "razorpay",
+          "transaction_id": "order_RBuFoF07GBZegw",
+          "amount": 12.0,
+          "currency": "INR",
+          "tier": "pro",
+          "credits_added": 0,
+          "created_at": "2025-08-31T10:21:42.629000",
+          "event": "payment.failed",
+          "raw": {
+            "entity": "event",
+            "account_id": "acc_QlLbN7WnfMKVeJ",
+            "event": "payment.failed",
+            "contains": [
+              "payment"
+            ],
+            "payload": {
+              "payment": {
+                "entity": {
+                  "id": "pay_RBuHqM25Ojdntw",
+                  "entity": "payment",
+                  "amount": 1200,
+                  "currency": "INR",
+                  "status": "failed",
+                  "order_id": "order_RBuFoF07GBZegw",
+                  "international": true,
+                  "method": "card",
+                  "amount_refunded": 0,
+                  "refund_status": null,
+                  "captured": false,
+                  "description": null,
+                  "card_id": "card_RBuHqXlFD00Ylw",
+                  "card": {
+                    "id": "card_RBuHqXlFD00Ylw",
+                    "entity": "card",
+                    "name": "Test User",
+                    "last4": "1111",
+                    "network": "Visa",
+                    "type": "debit",
+                    "issuer": null,
+                    "international": true,
+                    "emi": false,
+                    "sub_type": "consumer",
+                    "token_iin": null
+                  },
+                  "email": "shivadeepak.dev@gmail.com",
+                  "contact": "+919494949828",
+                  "notes": {
+                    "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+                    "tier": "pro"
+                  },
+                  "fee": null,
+                  "tax": null,
+                  "error_code": "BAD_REQUEST_ERROR",
+                  "error_description": "Your payment could not be completed as this business accepts domestic (Indian) card payments only. Try another payment method.",
+                  "error_source": "business",
+                  "error_step": "payment_initiation",
+                  "error_reason": "international_transaction_not_allowed",
+                  "acquirer_data": {
+                    "auth_code": null
+                  },
+                  "created_at": 1756635702
+                }
+              }
+            },
+            "created_at": 1756635702
+          }
+        },
+        {
+          "_id": "68b42732a473d88975bd8647",
+          "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+          "provider": "razorpay",
+          "transaction_id": "order_RBueBcv3ayVdGN",
+          "amount": 12.0,
+          "currency": "INR",
+          "tier": "pro",
+          "credits_added": 0,
+          "created_at": "2025-08-31T10:42:58.170000",
+          "event": "payment.authorized",
+          "raw": {
+            "entity": "event",
+            "account_id": "acc_QlLbN7WnfMKVeJ",
+            "event": "payment.authorized",
+            "contains": [
+              "payment"
+            ],
+            "payload": {
+              "payment": {
+                "entity": {
+                  "id": "pay_RBueIY4ybcAA86",
+                  "entity": "payment",
+                  "amount": 1200,
+                  "currency": "INR",
+                  "status": "authorized",
+                  "order_id": "order_RBueBcv3ayVdGN",
+                  "invoice_id": null,
+                  "international": false,
+                  "method": "upi",
+                  "amount_refunded": 0,
+                  "refund_status": null,
+                  "captured": false,
+                  "description": null,
+                  "card_id": null,
+                  "bank": null,
+                  "wallet": null,
+                  "vpa": "success@razorpay",
+                  "email": "shivadeepak.dev@gmail.com",
+                  "contact": "+919494949828",
+                  "notes": {
+                    "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+                    "tier": "pro"
+                  },
+                  "fee": null,
+                  "tax": null,
+                  "error_code": null,
+                  "error_description": null,
+                  "error_source": null,
+                  "error_step": null,
+                  "error_reason": null,
+                  "acquirer_data": {
+                    "rrn": "432688087808",
+                    "upi_transaction_id": "4228AED9D784D50A8FB9FE006E9482AC"
+                  },
+                  "created_at": 1756636977,
+                  "upi": {
+                    "vpa": "success@razorpay"
+                  }
+                }
+              }
+            },
+            "created_at": 1756636978
+          }
+        },
+        {
+          "_id": "68b42732a473d88975bd8648",
+          "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+          "provider": "razorpay",
+          "transaction_id": "order_RBueBcv3ayVdGN",
+          "amount": 12.0,
+          "currency": "INR",
+          "tier": "pro",
+          "credits_added": 500,
+          "created_at": "2025-08-31T10:42:58.729000",
+          "event": "payment.captured",
+          "raw": {
+            "entity": "event",
+            "account_id": "acc_QlLbN7WnfMKVeJ",
+            "event": "payment.captured",
+            "contains": [
+              "payment"
+            ],
+            "payload": {
+              "payment": {
+                "entity": {
+                  "id": "pay_RBueIY4ybcAA86",
+                  "entity": "payment",
+                  "amount": 1200,
+                  "currency": "INR",
+                  "status": "captured",
+                  "order_id": "order_RBueBcv3ayVdGN",
+                  "invoice_id": null,
+                  "international": false,
+                  "method": "upi",
+                  "amount_refunded": 0,
+                  "refund_status": null,
+                  "captured": true,
+                  "description": null,
+                  "card_id": null,
+                  "bank": null,
+                  "wallet": null,
+                  "vpa": "success@razorpay",
+                  "email": "shivadeepak.dev@gmail.com",
+                  "contact": "+919494949828",
+                  "notes": {
+                    "user_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+                    "tier": "pro"
+                  },
+                  "fee": 28,
+                  "tax": 4,
+                  "error_code": null,
+                  "error_description": null,
+                  "error_source": null,
+                  "error_step": null,
+                  "error_reason": null,
+                  "acquirer_data": {
+                    "rrn": "432688087808",
+                    "upi_transaction_id": "4228AED9D784D50A8FB9FE006E9482AC"
+                  },
+                  "created_at": 1756636977,
+                  "reward": null,
+                  "upi": {
+                    "vpa": "success@razorpay"
+                  },
+                  "base_amount": 1200
+                }
+              }
+            },
+            "created_at": 1756636978
+          }
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "ObjectId",
+          "sample_value": "68b42236cf5287a9384240e3"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "RvTmm7fAINTEFd7Ng0NmLBROubx2"
+        },
+        "provider": {
+          "type": "str",
+          "sample_value": "razorpay"
+        },
+        "transaction_id": {
+          "type": "str",
+          "sample_value": "order_RBuFoF07GBZegw"
+        },
+        "amount": {
+          "type": "float",
+          "sample_value": 12.0
+        },
+        "currency": {
+          "type": "str",
+          "sample_value": "INR"
+        },
+        "tier": {
+          "type": "str",
+          "sample_value": "pro"
+        },
+        "credits_added": {
+          "type": "int",
+          "sample_value": 0
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-31T10:21:42.629000"
+        },
+        "event": {
+          "type": "str",
+          "sample_value": "payment.failed"
+        },
+        "raw": {
+          "type": "object",
+          "fields": {
+            "entity": {
+              "type": "str",
+              "sample_value": "event"
+            },
+            "account_id": {
+              "type": "str",
+              "sample_value": "acc_QlLbN7WnfMKVeJ"
+            },
+            "event": {
+              "type": "str",
+              "sample_value": "payment.failed"
+            },
+            "contains": {
+              "type": "array",
+              "sample_length": 1,
+              "element_type": "str"
+            },
+            "payload": {
+              "type": "object",
+              "fields": {
+                "payment": {
+                  "type": "object",
+                  "fields": {
+                    "entity": {
+                      "type": "object",
+                      "fields": {
+                        "id": {
+                          "type": "str",
+                          "sample_value": "pay_RBuHqM25Ojdntw"
+                        },
+                        "entity": {
+                          "type": "str",
+                          "sample_value": "payment"
+                        },
+                        "amount": {
+                          "type": "int",
+                          "sample_value": 1200
+                        },
+                        "currency": {
+                          "type": "str",
+                          "sample_value": "INR"
+                        },
+                        "status": {
+                          "type": "str",
+                          "sample_value": "failed"
+                        },
+                        "order_id": {
+                          "type": "str",
+                          "sample_value": "order_RBuFoF07GBZegw"
+                        },
+                        "international": {
+                          "type": "bool",
+                          "sample_value": true
+                        },
+                        "method": {
+                          "type": "str",
+                          "sample_value": "card"
+                        },
+                        "amount_refunded": {
+                          "type": "int",
+                          "sample_value": 0
+                        },
+                        "refund_status": {
+                          "type": "NoneType",
+                          "sample_value": null
+                        },
+                        "captured": {
+                          "type": "bool",
+                          "sample_value": false
+                        },
+                        "description": {
+                          "type": "NoneType",
+                          "sample_value": null
+                        },
+                        "card_id": {
+                          "type": "str",
+                          "sample_value": "card_RBuHqXlFD00Ylw"
+                        },
+                        "card": {
+                          "type": "object",
+                          "fields": {
+                            "id": {
+                              "type": "str",
+                              "sample_value": "card_RBuHqXlFD00Ylw"
+                            },
+                            "entity": {
+                              "type": "str",
+                              "sample_value": "card"
+                            },
+                            "name": {
+                              "type": "str",
+                              "sample_value": "Test User"
+                            },
+                            "last4": {
+                              "type": "str",
+                              "sample_value": "1111"
+                            },
+                            "network": {
+                              "type": "str",
+                              "sample_value": "Visa"
+                            },
+                            "type": {
+                              "type": "str",
+                              "sample_value": "debit"
+                            },
+                            "issuer": {
+                              "type": "NoneType",
+                              "sample_value": null
+                            },
+                            "international": {
+                              "type": "bool",
+                              "sample_value": true
+                            },
+                            "emi": {
+                              "type": "bool",
+                              "sample_value": false
+                            },
+                            "sub_type": {
+                              "type": "str",
+                              "sample_value": "consumer"
+                            },
+                            "token_iin": {
+                              "type": "NoneType",
+                              "sample_value": null
+                            }
+                          }
+                        },
+                        "email": {
+                          "type": "str",
+                          "sample_value": "shivadeepak.dev@gmail.com"
+                        },
+                        "contact": {
+                          "type": "str",
+                          "sample_value": "+919494949828"
+                        },
+                        "notes": {
+                          "type": "object",
+                          "fields": {
+                            "user_id": {
+                              "type": "str",
+                              "sample_value": "RvTmm7fAINTEFd7Ng0NmLBROubx2"
+                            },
+                            "tier": {
+                              "type": "str",
+                              "sample_value": "pro"
+                            }
+                          }
+                        },
+                        "fee": {
+                          "type": "NoneType",
+                          "sample_value": null
+                        },
+                        "tax": {
+                          "type": "NoneType",
+                          "sample_value": null
+                        },
+                        "error_code": {
+                          "type": "str",
+                          "sample_value": "BAD_REQUEST_ERROR"
+                        },
+                        "error_description": {
+                          "type": "str",
+                          "sample_value": "Your payment could not be completed as this business accepts domestic (Indian) card payments only. T"
+                        },
+                        "error_source": {
+                          "type": "str",
+                          "sample_value": "business"
+                        },
+                        "error_step": {
+                          "type": "str",
+                          "sample_value": "payment_initiation"
+                        },
+                        "error_reason": {
+                          "type": "str",
+                          "sample_value": "international_transaction_not_allowed"
+                        },
+                        "acquirer_data": {
+                          "type": "object",
+                          "fields": {
+                            "auth_code": {
+                              "type": "NoneType",
+                              "sample_value": null
+                            }
+                          }
+                        },
+                        "created_at": {
+                          "type": "int",
+                          "sample_value": 1756635702
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "created_at": {
+              "type": "int",
+              "sample_value": 1756635702
+            }
+          }
+        }
+      },
+      "collection_stats": {
+        "size": 5701,
+        "storageSize": 36864,
+        "avgObjSize": 1140
+      }
+    },
+    "demo_bookings": {
+      "name": "demo_bookings",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "preferred_date": 1,
+            "status": 1
+          },
+          "name": "demo_preferred_date_status_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "demo_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "analytics_events": {
+      "name": "analytics_events",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1
+          },
+          "name": "user_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "event_type": 1
+          },
+          "name": "event_type_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "timestamp": -1
+          },
+          "name": "timestamp_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "prompt_purchases": {
+      "name": "prompt_purchases",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "listing_id": 1
+          },
+          "name": "pp_user_listing_unique",
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "pp_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "marketplace_purchases": {
+      "name": "marketplace_purchases",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "buyer_id": 1,
+            "created_at": -1
+          },
+          "name": "mp_buyer_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "prompt_id": 1,
+            "buyer_id": 1
+          },
+          "name": "mp_prompt_buyer_1_1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "export_jobs": {
+      "name": "export_jobs",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "export_jobs_user_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "created_at": -1
+          },
+          "name": "export_jobs_status_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "webhook_events": {
+      "name": "webhook_events",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "event_id": 1
+          },
+          "name": "event_id_1",
+          "unique": true
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "prompt_versions": {
+      "name": "prompt_versions",
+      "document_count": 9,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "created_at_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "version_number": 1
+          },
+          "name": "version_number_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "prompt_id": 1
+          },
+          "name": "prompt_id_1"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "b00398e4-ef66-4f5f-9049-ef820a820a79",
+          "prompt_id": "4f8c896f-2cc1-4f88-bff6-84a7a202515c",
+          "user_id": "test-user-123",
+          "version_number": 1,
+          "content": "Write a professional email about {topic}",
+          "role": "You are a professional email writing assistant",
+          "type": "text",
+          "changes": "Initial version",
+          "created_at": "2025-09-02T16:00:50.972000",
+          "created_by": "test-user-123"
+        },
+        {
+          "_id": "1144e21d-42af-454d-b887-8866460f1cf8",
+          "prompt_id": "87a8e112-232f-46c3-b56d-a9bf3cdcf6cd",
+          "user_id": "test-user-123",
+          "version_number": 1,
+          "content": "Write a professional email about {topic}",
+          "role": "You are a professional email writing assistant",
+          "type": "text",
+          "changes": "Initial version",
+          "created_at": "2025-09-02T16:05:31.610000",
+          "created_by": "test-user-123"
+        },
+        {
+          "_id": "6a5965b3-d36b-45ce-91de-2cd1c3abb0b3",
+          "prompt_id": "450e5d8e-d7e8-4876-8bce-dc376b0d1aac",
+          "user_id": "test-user-123",
+          "version_number": 1,
+          "content": "Write a professional email about {topic}",
+          "role": "You are a professional email writing assistant",
+          "type": "text",
+          "changes": "Initial version",
+          "created_at": "2025-09-02T16:06:53.992000",
+          "created_by": "test-user-123"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "str",
+          "sample_value": "b00398e4-ef66-4f5f-9049-ef820a820a79"
+        },
+        "prompt_id": {
+          "type": "str",
+          "sample_value": "4f8c896f-2cc1-4f88-bff6-84a7a202515c"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "test-user-123"
+        },
+        "version_number": {
+          "type": "int",
+          "sample_value": 1
+        },
+        "content": {
+          "type": "str",
+          "sample_value": "Write a professional email about {topic}"
+        },
+        "role": {
+          "type": "str",
+          "sample_value": "You are a professional email writing assistant"
+        },
+        "type": {
+          "type": "str",
+          "sample_value": "text"
+        },
+        "changes": {
+          "type": "str",
+          "sample_value": "Initial version"
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-09-02T16:00:50.972000"
+        },
+        "created_by": {
+          "type": "str",
+          "sample_value": "test-user-123"
+        }
+      },
+      "collection_stats": {
+        "size": 3047,
+        "storageSize": 36864,
+        "avgObjSize": 338
+      }
+    },
+    "ideas": {
+      "name": "ideas",
+      "document_count": 15,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "ideas_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "68b016de84857b97d1df6861",
+          "user_id": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "idea": {
+            "title": "WebGuard",
+            "description": "Develop a web application security platform that uses AI to detect and prevent cyber threats, providing businesses with a robust defense system against hacking and data breaches.",
+            "viral_value": 80,
+            "complexity_score": 5,
+            "market_potential": "medium",
+            "implementation_difficulty": "moderate",
+            "category": "Web Apps",
+            "tags": [
+              "cybersecurity",
+              "AI",
+              "web development"
+            ],
+            "estimated_time_to_market": "weeks"
+          },
+          "created_at": "2025-08-28T08:44:14.848000",
+          "source": "oracle"
+        },
+        {
+          "_id": "68b016de84857b97d1df6862",
+          "user_id": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "idea": {
+            "title": "AppSprint",
+            "description": "Create a low-code web app development platform that enables users to build custom web applications quickly and efficiently, without requiring extensive coding knowledge.",
+            "viral_value": 90,
+            "complexity_score": 5,
+            "market_potential": "medium",
+            "implementation_difficulty": "moderate",
+            "category": "Web Apps",
+            "tags": [
+              "low-code",
+              "web development",
+              "productivity"
+            ],
+            "estimated_time_to_market": "weeks"
+          },
+          "created_at": "2025-08-28T08:44:14.848000",
+          "source": "oracle"
+        },
+        {
+          "_id": "68b016de84857b97d1df6863",
+          "user_id": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "idea": {
+            "title": "UserFlow",
+            "description": "Design a web app analytics tool that uses machine learning to provide insights into user behavior, helping businesses optimize their web applications and improve user experience.",
+            "viral_value": 85,
+            "complexity_score": 5,
+            "market_potential": "medium",
+            "implementation_difficulty": "moderate",
+            "category": "Web Apps",
+            "tags": [
+              "web analytics",
+              "machine learning",
+              "user experience"
+            ],
+            "estimated_time_to_market": "weeks"
+          },
+          "created_at": "2025-08-28T08:44:14.848000",
+          "source": "oracle"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "ObjectId",
+          "sample_value": "68b016de84857b97d1df6861"
+        },
+        "user_id": {
+          "type": "str",
+          "sample_value": "N7QnqzSk4YZdFKbjjmIxRv0JoR63"
+        },
+        "idea": {
+          "type": "object",
+          "fields": {
+            "title": {
+              "type": "str",
+              "sample_value": "WebGuard"
+            },
+            "description": {
+              "type": "str",
+              "sample_value": "Develop a web application security platform that uses AI to detect and prevent cyber threats, provid"
+            },
+            "viral_value": {
+              "type": "int",
+              "sample_value": 80
+            },
+            "complexity_score": {
+              "type": "int",
+              "sample_value": 5
+            },
+            "market_potential": {
+              "type": "str",
+              "sample_value": "medium"
+            },
+            "implementation_difficulty": {
+              "type": "str",
+              "sample_value": "moderate"
+            },
+            "category": {
+              "type": "str",
+              "sample_value": "Web Apps"
+            },
+            "tags": {
+              "type": "array",
+              "sample_length": 3,
+              "element_type": "str"
+            },
+            "estimated_time_to_market": {
+              "type": "str",
+              "sample_value": "weeks"
+            }
+          }
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-28T08:44:14.848000"
+        },
+        "source": {
+          "type": "str",
+          "sample_value": "oracle"
+        }
+      },
+      "collection_stats": {
+        "size": 8875,
+        "storageSize": 36864,
+        "avgObjSize": 591
+      }
+    },
+    "auth_logs": {
+      "name": "auth_logs",
+      "document_count": 95,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "68b6f79eb1b5b4285ce04095",
+          "user_id": null,
+          "event_type": "invalid_token",
+          "details": "Not enough segments",
+          "timestamp": 1756821406.7716138,
+          "date": "2025-09-02 19:26:46"
+        },
+        {
+          "_id": "68b6f79eb1b5b4285ce04096",
+          "user_id": null,
+          "event_type": "invalid_token",
+          "details": "Not enough segments",
+          "timestamp": 1756821406.7965765,
+          "date": "2025-09-02 19:26:46"
+        },
+        {
+          "_id": "68b6fa4471ea96e04374af90",
+          "user_id": null,
+          "event_type": "invalid_token",
+          "details": "Not enough segments",
+          "timestamp": 1756822084.344552,
+          "date": "2025-09-02 19:38:04"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "ObjectId",
+          "sample_value": "68b6f79eb1b5b4285ce04095"
+        },
+        "user_id": {
+          "type": "NoneType",
+          "sample_value": null
+        },
+        "event_type": {
+          "type": "str",
+          "sample_value": "invalid_token"
+        },
+        "details": {
+          "type": "str",
+          "sample_value": "Not enough segments"
+        },
+        "timestamp": {
+          "type": "float",
+          "sample_value": 1756821406.7716138
+        },
+        "date": {
+          "type": "str",
+          "sample_value": "2025-09-02 19:26:46"
+        }
+      },
+      "collection_stats": {
+        "size": 13585,
+        "storageSize": 36864,
+        "avgObjSize": 143
+      }
+    },
+    "analytics": {
+      "name": "analytics",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "analytics_user_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "endpoint": 1,
+            "created_at": -1
+          },
+          "name": "analytics_endpoint_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "users": {
+      "name": "users",
+      "document_count": 5,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "email": 1
+          },
+          "name": "users_email_1",
+          "sparse": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "is_partner": 1
+          },
+          "name": "users_is_partner_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "partner_request_status": 1
+          },
+          "name": "users_partner_request_status_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "users_created_at_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "uid": 1
+          },
+          "name": "uid_1",
+          "unique": true
+        }
+      ],
+      "sample_documents": [
+        {
+          "_id": "RvTmm7fAINTEFd7Ng0NmLBROubx2",
+          "account_status": "active",
+          "created_at": "2025-08-24T07:24:32.489000",
+          "credits": {
+            "balance": 545,
+            "total_purchased": 0,
+            "total_spent": 0,
+            "last_purchase_at": null,
+            "starter_grant_used": true
+          },
+          "display_name": "demonsaint",
+          "email": "demonsaint.official@gmail.com",
+          "email_verified": true,
+          "last_active_at": "2025-08-31T17:25:28.777000",
+          "last_login_at": "2025-08-31T17:25:28.777000",
+          "partnership": {
+            "is_partner": false,
+            "partner_tier": null,
+            "application_status": "none"
+          },
+          "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ0wNInQaYSnQ2N6k0DwbpvmN3gXFm04LBrzoRClA4hqqh5pqA=s96-c",
+          "preferences": {
+            "theme": "system",
+            "language": "en",
+            "timezone": "UTC",
+            "notifications": {
+              "marketing": false,
+              "product": true,
+              "security": true
+            },
+            "privacy": {
+              "discoverable": false,
+              "show_profile": true
+            },
+            "interface": {
+              "density": "comfortable"
+            }
+          },
+          "profile": {
+            "bio": "",
+            "website": "",
+            "location": "",
+            "company": "",
+            "job_title": "",
+            "expertise": "",
+            "social_links": {},
+            "country": "IN"
+          },
+          "security": {
+            "two_factor_enabled": false,
+            "last_password_change": null,
+            "suspicious_activity_detected": false,
+            "gdpr_consent": false,
+            "gdpr_consent_date": null,
+            "data_retention_until": null
+          },
+          "stats": {
+            "prompts_created": 0,
+            "ideas_generated": 0,
+            "tests_run": 0,
+            "marketplace_sales": 0,
+            "total_earnings": 0,
+            "average_rating": 0,
+            "total_reviews": 0,
+            "followers_count": 0,
+            "following_count": 0
+          },
+          "subscription": {
+            "tier": "pro",
+            "status": "active",
+            "stripe_customer_id": null,
+            "provider_customer_id": "+919494949828"
+          },
+          "updated_at": "2025-08-31T17:25:28.777000",
+          "version": 77,
+          "login_seq": 48,
+          "uid": "RvTmm7fAINTEFd7Ng0NmLBROubx2"
+        },
+        {
+          "_id": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "account_status": "active",
+          "billing": {
+            "plan": "pro",
+            "status": "active",
+            "renewed_at": "2025-08-31T16:19:05.546000",
+            "provider": "razorpay",
+            "customer_id": "+919494949828"
+          },
+          "created_at": "2025-08-28T06:08:47.604000",
+          "credits": {
+            "balance": 560,
+            "total_purchased": 0,
+            "total_spent": 0,
+            "last_purchase_at": null,
+            "starter_grant_used": true
+          },
+          "display_name": "shivadeepak shanigaram",
+          "email": "shivadeepak.dev@gmail.com",
+          "email_verified": true,
+          "last_active_at": "2025-08-31T17:20:31.659000",
+          "last_login_at": "2025-08-31T17:20:31.659000",
+          "login_seq": 67,
+          "partnership": {
+            "is_partner": false,
+            "partner_tier": null,
+            "application_status": "none"
+          },
+          "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKjqJXLCm13JUoXyKBTi3zK4bRSmdjB-9kjGGwPS59Pd3_tfg=s96-c",
+          "preferences": {
+            "theme": "system",
+            "language": "en",
+            "timezone": "UTC",
+            "notifications": {
+              "marketing": false,
+              "product": true,
+              "security": true
+            },
+            "privacy": {
+              "discoverable": false,
+              "show_profile": true
+            },
+            "interface": {
+              "density": "comfortable"
+            }
+          },
+          "profile": {
+            "bio": "",
+            "website": "",
+            "location": "",
+            "company": "",
+            "job_title": "",
+            "expertise": "",
+            "social_links": {},
+            "country": "IN"
+          },
+          "security": {
+            "two_factor_enabled": false,
+            "last_password_change": null,
+            "suspicious_activity_detected": false,
+            "gdpr_consent": false,
+            "gdpr_consent_date": null,
+            "data_retention_until": null
+          },
+          "stats": {
+            "prompts_created": 0,
+            "ideas_generated": 0,
+            "tests_run": 0,
+            "marketplace_sales": 0,
+            "total_earnings": 0,
+            "average_rating": 0,
+            "total_reviews": 0,
+            "followers_count": 0,
+            "following_count": 0
+          },
+          "subscription": {
+            "tier": "pro",
+            "status": "active",
+            "provider_customer_id": "+919494949828",
+            "updated_at": "2025-08-31T16:19:05.546000"
+          },
+          "uid": "N7QnqzSk4YZdFKbjjmIxRv0JoR63",
+          "updated_at": "2025-08-31T17:20:31.659000"
+        },
+        {
+          "_id": "n9GlarU9uRg3qAfDGci6xS5u5uI3",
+          "account_status": "active",
+          "billing": {
+            "provider": null,
+            "customer_id": null,
+            "plan": "free",
+            "status": "active",
+            "started_at": null,
+            "renewed_at": null
+          },
+          "created_at": "2025-08-31T17:23:29.776000",
+          "credits": {
+            "balance": 50,
+            "total_purchased": 0,
+            "total_spent": 0,
+            "last_purchase_at": null,
+            "starter_grant_used": true
+          },
+          "display_name": "SHIVADEEPAK",
+          "email": "shivadeepak.shanigaram@gmail.com",
+          "email_verified": true,
+          "last_active_at": "2025-08-31T17:25:14.802000",
+          "last_login_at": "2025-08-31T17:25:14.802000",
+          "login_seq": 4,
+          "partnership": {
+            "is_partner": false,
+            "partner_tier": null,
+            "application_status": "none"
+          },
+          "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKQUaUUUjjkukfgZgbnPEubTbSi1e5uEsdQEJCPCByaDeoEPA=s96-c",
+          "preferences": {
+            "theme": "system",
+            "language": "en",
+            "timezone": "UTC",
+            "notifications": {
+              "marketing": false,
+              "product": true,
+              "security": true
+            },
+            "privacy": {
+              "discoverable": false,
+              "show_profile": true
+            },
+            "interface": {
+              "density": "comfortable"
+            }
+          },
+          "profile": {
+            "bio": "",
+            "website": "",
+            "location": "",
+            "company": "",
+            "job_title": "",
+            "expertise": "",
+            "social_links": {}
+          },
+          "security": {
+            "two_factor_enabled": false,
+            "last_password_change": null,
+            "suspicious_activity_detected": false,
+            "gdpr_consent": false,
+            "gdpr_consent_date": null,
+            "data_retention_until": null
+          },
+          "stats": {
+            "prompts_created": 0,
+            "ideas_generated": 0,
+            "tests_run": 0,
+            "marketplace_sales": 0,
+            "total_earnings": 0,
+            "average_rating": 0,
+            "total_reviews": 0,
+            "followers_count": 0,
+            "following_count": 0
+          },
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripe_customer_id": null
+          },
+          "uid": "n9GlarU9uRg3qAfDGci6xS5u5uI3",
+          "updated_at": "2025-08-31T17:25:14.802000"
+        }
+      ],
+      "field_analysis": {
+        "_id": {
+          "type": "str",
+          "sample_value": "RvTmm7fAINTEFd7Ng0NmLBROubx2"
+        },
+        "account_status": {
+          "type": "str",
+          "sample_value": "active"
+        },
+        "created_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-24T07:24:32.489000"
+        },
+        "credits": {
+          "type": "object",
+          "fields": {
+            "balance": {
+              "type": "int",
+              "sample_value": 545
+            },
+            "total_purchased": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "total_spent": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "last_purchase_at": {
+              "type": "NoneType",
+              "sample_value": null
+            },
+            "starter_grant_used": {
+              "type": "bool",
+              "sample_value": true
+            }
+          }
+        },
+        "display_name": {
+          "type": "str",
+          "sample_value": "demonsaint"
+        },
+        "email": {
+          "type": "str",
+          "sample_value": "demonsaint.official@gmail.com"
+        },
+        "email_verified": {
+          "type": "bool",
+          "sample_value": true
+        },
+        "last_active_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-31T17:25:28.777000"
+        },
+        "last_login_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-31T17:25:28.777000"
+        },
+        "partnership": {
+          "type": "object",
+          "fields": {
+            "is_partner": {
+              "type": "bool",
+              "sample_value": false
+            },
+            "partner_tier": {
+              "type": "NoneType",
+              "sample_value": null
+            },
+            "application_status": {
+              "type": "str",
+              "sample_value": "none"
+            }
+          }
+        },
+        "photo_url": {
+          "type": "str",
+          "sample_value": "https://lh3.googleusercontent.com/a/ACg8ocJ0wNInQaYSnQ2N6k0DwbpvmN3gXFm04LBrzoRClA4hqqh5pqA=s96-c"
+        },
+        "preferences": {
+          "type": "object",
+          "fields": {
+            "theme": {
+              "type": "str",
+              "sample_value": "system"
+            },
+            "language": {
+              "type": "str",
+              "sample_value": "en"
+            },
+            "timezone": {
+              "type": "str",
+              "sample_value": "UTC"
+            },
+            "notifications": {
+              "type": "object",
+              "fields": {
+                "marketing": {
+                  "type": "bool",
+                  "sample_value": false
+                },
+                "product": {
+                  "type": "bool",
+                  "sample_value": true
+                },
+                "security": {
+                  "type": "bool",
+                  "sample_value": true
+                }
+              }
+            },
+            "privacy": {
+              "type": "object",
+              "fields": {
+                "discoverable": {
+                  "type": "bool",
+                  "sample_value": false
+                },
+                "show_profile": {
+                  "type": "bool",
+                  "sample_value": true
+                }
+              }
+            },
+            "interface": {
+              "type": "object",
+              "fields": {
+                "density": {
+                  "type": "str",
+                  "sample_value": "comfortable"
+                }
+              }
+            }
+          }
+        },
+        "profile": {
+          "type": "object",
+          "fields": {
+            "bio": {
+              "type": "str",
+              "sample_value": ""
+            },
+            "website": {
+              "type": "str",
+              "sample_value": ""
+            },
+            "location": {
+              "type": "str",
+              "sample_value": ""
+            },
+            "company": {
+              "type": "str",
+              "sample_value": ""
+            },
+            "job_title": {
+              "type": "str",
+              "sample_value": ""
+            },
+            "expertise": {
+              "type": "str",
+              "sample_value": ""
+            },
+            "social_links": {
+              "type": "object",
+              "fields": {}
+            },
+            "country": {
+              "type": "str",
+              "sample_value": "IN"
+            }
+          }
+        },
+        "security": {
+          "type": "object",
+          "fields": {
+            "two_factor_enabled": {
+              "type": "bool",
+              "sample_value": false
+            },
+            "last_password_change": {
+              "type": "NoneType",
+              "sample_value": null
+            },
+            "suspicious_activity_detected": {
+              "type": "bool",
+              "sample_value": false
+            },
+            "gdpr_consent": {
+              "type": "bool",
+              "sample_value": false
+            },
+            "gdpr_consent_date": {
+              "type": "NoneType",
+              "sample_value": null
+            },
+            "data_retention_until": {
+              "type": "NoneType",
+              "sample_value": null
+            }
+          }
+        },
+        "stats": {
+          "type": "object",
+          "fields": {
+            "prompts_created": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "ideas_generated": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "tests_run": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "marketplace_sales": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "total_earnings": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "average_rating": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "total_reviews": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "followers_count": {
+              "type": "int",
+              "sample_value": 0
+            },
+            "following_count": {
+              "type": "int",
+              "sample_value": 0
+            }
+          }
+        },
+        "subscription": {
+          "type": "object",
+          "fields": {
+            "tier": {
+              "type": "str",
+              "sample_value": "pro"
+            },
+            "status": {
+              "type": "str",
+              "sample_value": "active"
+            },
+            "stripe_customer_id": {
+              "type": "NoneType",
+              "sample_value": null
+            },
+            "provider_customer_id": {
+              "type": "str",
+              "sample_value": "+919494949828"
+            }
+          }
+        },
+        "updated_at": {
+          "type": "datetime",
+          "sample_value": "2025-08-31T17:25:28.777000"
+        },
+        "version": {
+          "type": "int",
+          "sample_value": 77
+        },
+        "login_seq": {
+          "type": "int",
+          "sample_value": 48
+        },
+        "uid": {
+          "type": "str",
+          "sample_value": "RvTmm7fAINTEFd7Ng0NmLBROubx2"
+        }
+      },
+      "collection_stats": {
+        "size": 6903,
+        "storageSize": 36864,
+        "avgObjSize": 1380
+      }
+    },
+    "reviews": {
+      "name": "reviews",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "userId": 1
+          },
+          "name": "reviews_prompt_user_unique",
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "createdAt": -1
+          },
+          "name": "reviews_prompt_createdAt_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "helpfulCount": -1
+          },
+          "name": "reviews_prompt_helpful_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "rating": -1
+          },
+          "name": "reviews_prompt_rating_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "exports": {
+      "name": "exports",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "exports_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    },
+    "teams": {
+      "name": "teams",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "owner_id": 1
+          },
+          "name": "owner_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "created_at_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "members.user_id": 1
+          },
+          "name": "members.user_id_1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {}
+    }
+  }
+}

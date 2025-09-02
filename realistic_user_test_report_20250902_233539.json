@@ -1,0 +1,1217 @@
+{
+  "summary": {
+    "total_tests": 12,
+    "successful_tests": 12,
+    "success_rate": 100.0,
+    "average_response_time_ms": 227.20500000000004,
+    "data_validation_rate": 10.0
+  },
+  "real_user_data": {
+    "_id": "test-user-123",
+    "account_status": "active",
+    "billing": {
+      "provider": null,
+      "customer_id": null,
+      "plan": "free",
+      "status": "active",
+      "started_at": null,
+      "renewed_at": null,
+      "created_at": "2025-09-02T13:27:55.911+00:00"
+    },
+    "credits": {
+      "balance": 7,
+      "total_purchased": 0,
+      "total_spent": 0,
+      "last_purchase_at": null,
+      "starter_grant_used": true
+    },
+    "display_name": "Test User",
+    "email": "test@example.com",
+    "email_verified": true,
+    "last_active_at": "2025-09-02T18:01:36.490+00:00",
+    "last_login_at": "2025-09-02T18:01:36.490+00:00",
+    "login_seq": 23,
+    "partnership": {
+      "is_partner": false,
+      "partner_tier": null,
+      "application_status": "none"
+    },
+    "photo_url": "",
+    "preferences": {
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "updated_at": "2025-09-02T17:56:24.051+00:00"
+      }
+    },
+    "profile": {
+      "bio": "",
+      "website": "",
+      "location": "",
+      "company": "",
+      "job_title": "",
+      "expertise": ""
+    },
+    "social_links": {},
+    "security": {
+      "two_factor_enabled": false,
+      "last_password_change": null,
+      "suspicious_activity_detected": false,
+      "gdpr_consent": false,
+      "gdpr_consent_date": null,
+      "data_retention_until": null
+    },
+    "stats": {
+      "prompts_created": 0,
+      "ideas_generated": 0,
+      "tests_run": 0,
+      "marketplace_sales": 0,
+      "total_earnings": 0,
+      "average_rating": 0,
+      "total_reviews": 0,
+      "followers_count": 0,
+      "following_count": 0
+    },
+    "subscription": {
+      "tier": "free",
+      "status": "active",
+      "stripe_customer_id": null
+    },
+    "uid": "test-user-123",
+    "updated_at": "2025-09-02T18:01:36.490+00:00"
+  },
+  "test_results": [
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/auth/complete",
+      "description": "Authenticate with real user data",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 2444.3,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "uid": "test-user-123",
+          "email": "test@example.com",
+          "displayName": "Test User",
+          "photoURL": "",
+          "emailVerified": true,
+          "accountStatus": "active",
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripeCustomerId": null
+          },
+          "billing": {
+            "provider": null,
+            "customerId": null,
+            "plan": "free",
+            "status": "active",
+            "startedAt": null,
+            "renewedAt": null
+          },
+          "credits": {
+            "balance": 7,
+            "totalPurchased": 0,
+            "totalSpent": 0,
+            "lastPurchaseAt": null,
+            "starterGrantUsed": true
+          },
+          "preferences": {
+            "theme": "light",
+            "notifications": {
+              "email": false,
+              "push": true
+            },
+            "updatedAt": "2025-09-02T18:05:08.516000Z"
+          },
+          "stats": {
+            "promptsCreated": 0,
+            "ideasGenerated": 0,
+            "testsRun": 0,
+            "marketplaceSales": 0,
+            "totalEarnings": 0,
+            "averageRating": 0,
+            "totalReviews": 0,
+            "followersCount": 0,
+            "followingCount": 0
+          },
+          "createdAt": "2025-09-02T13:27:55.911000+00:00",
+          "createdAtEpoch": 1756819675911,
+          "lastLoginAt": "2025-09-02T18:05:38.450000+00:00",
+          "firstLogin": false
+        },
+        "message": "Onboarding complete"
+      },
+      "validation": "\u2705 Auth response matches real user"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me",
+      "description": "Get user profile (should match database)",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 7.01,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "uid": "test-user-123",
+          "email": "test@example.com",
+          "displayName": "Test User",
+          "photoURL": "",
+          "emailVerified": true,
+          "accountStatus": "active",
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripeCustomerId": null
+          },
+          "billing": {
+            "provider": null,
+            "customerId": null,
+            "plan": "free",
+            "status": "active",
+            "startedAt": null,
+            "renewedAt": null
+          },
+          "credits": {
+            "balance": 7,
+            "totalPurchased": 0,
+            "totalSpent": 0,
+            "lastPurchaseAt": null,
+            "starterGrantUsed": true
+          },
+          "preferences": {
+            "theme": "light",
+            "notifications": {
+              "email": false,
+              "push": true
+            },
+            "updatedAt": "2025-09-02T18:05:08.516000Z"
+          },
+          "stats": {
+            "promptsCreated": 0,
+            "ideasGenerated": 0,
+            "testsRun": 0,
+            "marketplaceSales": 0,
+            "totalEarnings": 0,
+            "averageRating": 0,
+            "totalReviews": 0,
+            "followersCount": 0,
+            "followingCount": 0
+          },
+          "createdAt": "2025-09-02T13:27:55.911000+00:00",
+          "createdAtEpoch": 1756819675911,
+          "lastLoginAt": "2025-09-02T18:05:38.450000+00:00",
+          "lastActiveAt": "2025-09-02T18:05:38.450000+00:00",
+          "partnership": {
+            "isPartner": false,
+            "partnerTier": null,
+            "applicationStatus": "none"
+          },
+          "security": {
+            "twoFactorEnabled": false,
+            "lastPasswordChange": null,
+            "suspiciousActivityDetected": false,
+            "gdprConsent": false,
+            "gdprConsentDate": null,
+            "dataRetentionUntil": null
+          },
+          "profile": {
+            "displayName": "",
+            "bio": "",
+            "website": "",
+            "location": "",
+            "company": "",
+            "jobTitle": "",
+            "expertise": "",
+            "socialLinks": {},
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+          },
+          "version": 1
+        },
+        "message": "User profile fetched"
+      },
+      "validation": "Missing fields: ['display_name']"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/credits",
+      "description": "Get credits (should show 7 credits)",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 7.0,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "credits": 7,
+          "subscriptionCredits": 0,
+          "totalAvailable": 7,
+          "lastPurchase": null,
+          "creditHistory": {}
+        },
+        "message": "Credits fetched successfully"
+      },
+      "validation": "Missing credit fields: ['balance', 'total_spent', 'total_purchased']"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/usage/track",
+      "description": "Track credit usage",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 8.35,
+      "response_data": {
+        "status": "success",
+        "data": null,
+        "message": "Usage event tracked."
+      },
+      "validation": null
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/credits",
+      "description": "Verify credit deduction",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 17.52,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "credits": 7,
+          "subscriptionCredits": 0,
+          "totalAvailable": 7,
+          "lastPurchase": null,
+          "creditHistory": {}
+        },
+        "message": "Credits fetched successfully"
+      },
+      "validation": "Missing credit fields: ['balance', 'total_spent', 'total_purchased']"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/preferences",
+      "description": "Get preferences (theme should be dark)",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 31.04,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "notifications": {
+            "emailNotifications": true,
+            "pushNotifications": true,
+            "marketingEmails": false,
+            "securityAlerts": true,
+            "weeklyDigest": true
+          },
+          "interface": {
+            "theme": "dark",
+            "compactMode": false,
+            "animationsEnabled": true,
+            "autoSave": true,
+            "defaultView": "grid"
+          },
+          "privacy": {
+            "profileVisible": true,
+            "activityVisible": false,
+            "showInLeaderboard": true,
+            "allowDirectMessages": true
+          }
+        },
+        "message": "User preferences retrieved successfully"
+      },
+      "validation": "Missing theme preference"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/preferences",
+      "description": "Update preferences",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 14.0,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "updatedPreferences": {
+            "theme": "light",
+            "notifications": {
+              "email": false,
+              "push": true
+            }
+          },
+          "updatedAt": "2025-09-02T18:05:38.920319"
+        },
+        "message": "User preferences updated successfully"
+      },
+      "validation": "Missing theme preference"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/stats",
+      "description": "Get user stats (should show zeros)",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 49.08,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "totalPrompts": 9,
+          "activeListings": 0,
+          "totalSales": 0
+        },
+        "message": "User stats retrieved successfully"
+      },
+      "validation": "Missing stats: ['prompts_created', 'ideas_generated', 'tests_run']"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/me/profile",
+      "description": "Update user profile",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 26.05,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "displayName": "Test User"
+        },
+        "message": "Profile updated"
+      },
+      "validation": "Missing fields: ['uid', 'email', 'display_name', 'subscription', 'credits']"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me",
+      "description": "Verify profile updates",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 38.54,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "uid": "test-user-123",
+          "email": "test@example.com",
+          "displayName": "Test User",
+          "photoURL": "",
+          "emailVerified": true,
+          "accountStatus": "active",
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripeCustomerId": null
+          },
+          "billing": {
+            "provider": null,
+            "customerId": null,
+            "plan": "free",
+            "status": "active",
+            "startedAt": null,
+            "renewedAt": null
+          },
+          "credits": {
+            "balance": 7,
+            "totalPurchased": 0,
+            "totalSpent": 0,
+            "lastPurchaseAt": null,
+            "starterGrantUsed": true
+          },
+          "preferences": {
+            "theme": "light",
+            "notifications": {
+              "email": false,
+              "push": true
+            },
+            "updatedAt": "2025-09-02T18:05:38.918000Z"
+          },
+          "stats": {
+            "promptsCreated": 0,
+            "ideasGenerated": 0,
+            "testsRun": 0,
+            "marketplaceSales": 0,
+            "totalEarnings": 0,
+            "averageRating": 0,
+            "totalReviews": 0,
+            "followersCount": 0,
+            "followingCount": 0
+          },
+          "createdAt": "2025-09-02T13:27:55.911000+00:00",
+          "createdAtEpoch": 1756819675911,
+          "lastLoginAt": "2025-09-02T18:05:38.450000+00:00",
+          "lastActiveAt": "2025-09-02T18:05:38.450000+00:00",
+          "partnership": {
+            "isPartner": false,
+            "partnerTier": null,
+            "applicationStatus": "none"
+          },
+          "security": {
+            "twoFactorEnabled": false,
+            "lastPasswordChange": null,
+            "suspiciousActivityDetected": false,
+            "gdprConsent": false,
+            "gdprConsentDate": null,
+            "dataRetentionUntil": null
+          },
+          "profile": {
+            "displayName": "",
+            "bio": "",
+            "website": "",
+            "location": "",
+            "company": "",
+            "jobTitle": "",
+            "expertise": "",
+            "socialLinks": {},
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+          },
+          "version": 1
+        },
+        "message": "User profile fetched"
+      },
+      "validation": "Missing fields: ['display_name']"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/export-data",
+      "description": "Export user data (GDPR)",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 60.55,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "userProfile": {
+            "accountStatus": "active",
+            "billing": {
+              "provider": null,
+              "customerId": null,
+              "plan": "free",
+              "status": "active",
+              "startedAt": null,
+              "renewedAt": null
+            },
+            "createdAt": "2025-09-02T13:27:55.911000Z",
+            "credits": {
+              "balance": 7,
+              "totalPurchased": 0,
+              "totalSpent": 0,
+              "lastPurchaseAt": null,
+              "starterGrantUsed": true
+            },
+            "displayName": "Test User",
+            "email": "test@example.com",
+            "emailVerified": true,
+            "lastActiveAt": "2025-09-02T18:05:38.450000Z",
+            "lastLoginAt": "2025-09-02T18:05:38.450000Z",
+            "loginSeq": 25,
+            "partnership": {
+              "isPartner": false,
+              "partnerTier": null,
+              "applicationStatus": "none"
+            },
+            "photoUrl": "",
+            "preferences": {
+              "theme": "light",
+              "notifications": {
+                "email": false,
+                "push": true
+              },
+              "updatedAt": "2025-09-02T18:05:38.918000Z"
+            },
+            "profile": {
+              "bio": "",
+              "website": "",
+              "location": "",
+              "company": "",
+              "jobTitle": "",
+              "expertise": "",
+              "socialLinks": {}
+            },
+            "security": {
+              "twoFactorEnabled": false,
+              "lastPasswordChange": null,
+              "suspiciousActivityDetected": false,
+              "gdprConsent": false,
+              "gdprConsentDate": null,
+              "dataRetentionUntil": null
+            },
+            "stats": {
+              "promptsCreated": 0,
+              "ideasGenerated": 0,
+              "testsRun": 0,
+              "marketplaceSales": 0,
+              "totalEarnings": 0,
+              "averageRating": 0,
+              "totalReviews": 0,
+              "followersCount": 0,
+              "followingCount": 0
+            },
+            "subscription": {
+              "tier": "free",
+              "status": "active",
+              "stripeCustomerId": null
+            },
+            "uid": "test-user-123",
+            "updatedAt": "2025-09-02T18:05:39.033000Z",
+            "id": "test-user-123"
+          },
+          "prompts": [
+            {
+              "userId": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "b00398e4-ef66-4f5f-9049-ef820a820a79",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T16:00:50.972000+00:00",
+              "updatedAt": "2025-09-02T16:00:50.972000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "4f8c896f-2cc1-4f88-bff6-84a7a202515c",
+              "versions": [
+                {
+                  "promptId": "4f8c896f-2cc1-4f88-bff6-84a7a202515c",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "You are a professional email writing assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T16:00:50.972000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "b00398e4-ef66-4f5f-9049-ef820a820a79"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "1144e21d-42af-454d-b887-8866460f1cf8",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T16:05:31.610000+00:00",
+              "updatedAt": "2025-09-02T16:05:31.610000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "87a8e112-232f-46c3-b56d-a9bf3cdcf6cd",
+              "versions": [
+                {
+                  "promptId": "87a8e112-232f-46c3-b56d-a9bf3cdcf6cd",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "You are a professional email writing assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T16:05:31.610000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "1144e21d-42af-454d-b887-8866460f1cf8"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "6a5965b3-d36b-45ce-91de-2cd1c3abb0b3",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T16:06:53.992000+00:00",
+              "updatedAt": "2025-09-02T16:06:53.992000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "450e5d8e-d7e8-4876-8bce-dc376b0d1aac",
+              "versions": [
+                {
+                  "promptId": "450e5d8e-d7e8-4876-8bce-dc376b0d1aac",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "You are a professional email writing assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T16:06:53.992000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "6a5965b3-d36b-45ce-91de-2cd1c3abb0b3"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "da5c2125-d778-4b78-8c40-e4e8431365bb",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T16:09:38.191000+00:00",
+              "updatedAt": "2025-09-02T16:09:38.191000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "d58672d9-a033-478d-8dcc-7f156a7ad6a8",
+              "versions": [
+                {
+                  "promptId": "d58672d9-a033-478d-8dcc-7f156a7ad6a8",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "You are a professional email writing assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T16:09:38.191000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "da5c2125-d778-4b78-8c40-e4e8431365bb"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "13200b48-a227-4955-8f6e-5384e205810b",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T17:39:51.122000+00:00",
+              "updatedAt": "2025-09-02T17:39:51.122000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "b51bbf7e-07c5-4c96-9aa6-3086d3c857c9",
+              "versions": [
+                {
+                  "promptId": "b51bbf7e-07c5-4c96-9aa6-3086d3c857c9",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "You are a professional email writing assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T17:39:51.122000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "13200b48-a227-4955-8f6e-5384e205810b"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "9f4e0129-0e8d-46a0-88a1-ce96e343b62a",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T17:49:38.025000+00:00",
+              "updatedAt": "2025-09-02T17:49:38.025000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "2862edd1-f715-4899-b8fd-2ec2e08e0e07",
+              "versions": [
+                {
+                  "promptId": "2862edd1-f715-4899-b8fd-2ec2e08e0e07",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T17:49:38.025000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "9f4e0129-0e8d-46a0-88a1-ce96e343b62a"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "fc24b51c-932d-48cd-aaed-214c5ae8f86d",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T17:53:31.585000+00:00",
+              "updatedAt": "2025-09-02T17:53:31.585000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "5f7c9b5d-afc6-40fc-8e7c-8db61f888755",
+              "versions": [
+                {
+                  "promptId": "5f7c9b5d-afc6-40fc-8e7c-8db61f888755",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T17:53:31.585000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "fc24b51c-932d-48cd-aaed-214c5ae8f86d"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "222da3bc-c199-41a2-8af7-cd8761cc8301",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T17:57:10.625000+00:00",
+              "updatedAt": "2025-09-02T17:57:10.625000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "2b56f835-f73b-4edf-8682-7f5fee0cc703",
+              "versions": [
+                {
+                  "promptId": "2b56f835-f73b-4edf-8682-7f5fee0cc703",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T17:57:10.625000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "222da3bc-c199-41a2-8af7-cd8761cc8301"
+                }
+              ]
+            },
+            {
+              "userId": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "isTemplate": false,
+              "isFeatured": false,
+              "version": 1,
+              "latestVersionId": "ccbac2eb-2963-4ac2-8c20-6dc60f4fb9a9",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "testCount": 0,
+                "successRate": 0,
+                "avgResponseTime": 0
+              },
+              "analytics": {
+                "viewCount": 0,
+                "useCount": 0,
+                "shareCount": 0,
+                "likeCount": 0,
+                "downloadCount": 0,
+                "commentCount": 0
+              },
+              "collaboration": {
+                "isCollaborative": false,
+                "allowedUsers": [],
+                "permissions": {},
+                "activeEditors": []
+              },
+              "createdAt": "2025-09-02T18:00:17.448000+00:00",
+              "updatedAt": "2025-09-02T18:00:17.448000+00:00",
+              "createdBy": "test-user-123",
+              "lastModifiedBy": "test-user-123",
+              "id": "9a1bcff8-d9da-463f-ba2b-36f2352b75e7",
+              "versions": [
+                {
+                  "promptId": "9a1bcff8-d9da-463f-ba2b-36f2352b75e7",
+                  "userId": "test-user-123",
+                  "versionNumber": 1,
+                  "content": "Write a professional email about {topic}",
+                  "role": "assistant",
+                  "type": "text",
+                  "changes": "Initial version",
+                  "createdAt": "2025-09-02T18:00:17.448000+00:00",
+                  "createdBy": "test-user-123",
+                  "id": "ccbac2eb-2963-4ac2-8c20-6dc60f4fb9a9"
+                }
+              ]
+            }
+          ],
+          "marketplaceListings": [],
+          "purchaseHistory": [],
+          "exportTimestamp": "2025-09-02T18:05:39.142598",
+          "exportVersion": "1.0"
+        },
+        "message": "User data exported successfully"
+      },
+      "validation": null
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me/usage",
+      "description": "Get usage history",
+      "status_code": 200,
+      "expected_status": 200,
+      "success": true,
+      "response_time_ms": 23.02,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "summary": {
+            "custom_event": {
+              "count": 12,
+              "total_credits": 0
+            }
+          },
+          "recent": [
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T18:05:38.855000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T18:05:08.440000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T17:56:24.098000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T17:56:04.008000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T17:38:31.343000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T16:17:01.901000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T16:11:42.422000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T15:12:12.818000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T15:03:23.923000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T14:26:32.424000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T14:22:23.275000Z"
+            },
+            {
+              "user_id": "test-user-123",
+              "source": "api",
+              "action": "custom_event",
+              "details": {},
+              "credits_spent": 0,
+              "timestamp": "2025-09-02T14:16:08.653000Z"
+            }
+          ]
+        },
+        "message": "Success"
+      },
+      "validation": "Missing fields: ['uid', 'email', 'display_name', 'subscription', 'credits']"
+    }
+  ]
+}

@@ -1,0 +1,949 @@
+{
+  "summary": {
+    "total_tests": 15,
+    "working_endpoints": 1,
+    "connection_issues": 0,
+    "server_errors": 0,
+    "validation_errors": 2,
+    "success_rate": 6.666666666666667
+  },
+  "working_endpoints": [
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/auth/complete",
+      "description": "User auth",
+      "success": true,
+      "status_code": 200,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "uid": "test-user-123",
+          "email": "test@example.com",
+          "displayName": "Test User",
+          "photoURL": "",
+          "emailVerified": true,
+          "accountStatus": "active",
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripeCustomerId": null
+          },
+          "billing": {
+            "provider": null,
+            "customerId": null,
+            "plan": "free",
+            "status": "active",
+            "startedAt": null,
+            "renewedAt": null
+          },
+          "credits": {
+            "balance": 13,
+            "totalPurchased": 0,
+            "totalSpent": 0,
+            "lastPurchaseAt": null,
+            "starterGrantUsed": true
+          },
+          "preferences": {
+            "theme": "dark",
+            "notifications": {
+              "email": true
+            },
+            "updatedAt": "2025-09-02T17:56:24.051000Z"
+          },
+          "stats": {
+            "promptsCreated": 0,
+            "ideasGenerated": 0,
+            "testsRun": 0,
+            "marketplaceSales": 0,
+            "totalEarnings": 0,
+            "averageRating": 0,
+            "totalReviews": 0,
+            "followersCount": 0,
+            "followingCount": 0
+          },
+          "createdAt": "2025-09-02T13:27:55.911000+00:00",
+          "createdAtEpoch": 1756819675911,
+          "lastLoginAt": "2025-09-02T17:59:37.907000+00:00",
+          "firstLogin": false
+        },
+        "message": "Onboarding complete"
+      },
+      "error_type": null,
+      "error_message": "",
+      "execution_time": 408.32
+    }
+  ],
+  "connection_issues": [],
+  "server_errors": [],
+  "validation_errors": [
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/prompts/",
+      "description": "Create prompt",
+      "success": false,
+      "status_code": 422,
+      "response_data": {
+        "detail": [
+          {
+            "type": "missing",
+            "loc": [
+              "body",
+              "body"
+            ],
+            "msg": "Field required",
+            "input": {
+              "title": "Test Prompt test-f0eeb91b",
+              "content": "You are a helpful assistant. Help with {task}.",
+              "category": "general"
+            }
+          },
+          {
+            "type": "missing",
+            "loc": [
+              "body",
+              "role"
+            ],
+            "msg": "Field required",
+            "input": {
+              "title": "Test Prompt test-f0eeb91b",
+              "content": "You are a helpful assistant. Help with {task}.",
+              "category": "general"
+            }
+          }
+        ]
+      },
+      "error_type": "validation_error",
+      "error_message": "",
+      "execution_time": 14.01
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/remix-prompt",
+      "description": "Remix prompt",
+      "success": false,
+      "status_code": 422,
+      "response_data": {
+        "detail": [
+          {
+            "type": "missing",
+            "loc": [
+              "body",
+              "prompt_body"
+            ],
+            "msg": "Field required",
+            "input": {
+              "prompt_text": "Write a professional email"
+            }
+          }
+        ]
+      },
+      "error_type": "validation_error",
+      "error_message": "",
+      "execution_time": 9.01
+    }
+  ],
+  "all_results": [
+    {
+      "method": "GET",
+      "endpoint": "/",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "message": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 2050.5
+    },
+    {
+      "method": "GET",
+      "endpoint": "/health",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "status": "ok"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 4.0
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/health",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "status": "ok",
+        "version": "1.0",
+        "timestamp": "2025-09-02T23:20:00Z"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 10.01
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/auth/complete",
+      "description": "User auth",
+      "success": true,
+      "status_code": 200,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "uid": "test-user-123",
+          "email": "test@example.com",
+          "displayName": "Test User",
+          "photoURL": "",
+          "emailVerified": true,
+          "accountStatus": "active",
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripeCustomerId": null
+          },
+          "billing": {
+            "provider": null,
+            "customerId": null,
+            "plan": "free",
+            "status": "active",
+            "startedAt": null,
+            "renewedAt": null
+          },
+          "credits": {
+            "balance": 13,
+            "totalPurchased": 0,
+            "totalSpent": 0,
+            "lastPurchaseAt": null,
+            "starterGrantUsed": true
+          },
+          "preferences": {
+            "theme": "dark",
+            "notifications": {
+              "email": true
+            },
+            "updatedAt": "2025-09-02T17:56:24.051000Z"
+          },
+          "stats": {
+            "promptsCreated": 0,
+            "ideasGenerated": 0,
+            "testsRun": 0,
+            "marketplaceSales": 0,
+            "totalEarnings": 0,
+            "averageRating": 0,
+            "totalReviews": 0,
+            "followersCount": 0,
+            "followingCount": 0
+          },
+          "createdAt": "2025-09-02T13:27:55.911000+00:00",
+          "createdAtEpoch": 1756819675911,
+          "lastLoginAt": "2025-09-02T17:59:37.907000+00:00",
+          "firstLogin": false
+        },
+        "message": "Onboarding complete"
+      },
+      "error_type": null,
+      "error_message": "",
+      "execution_time": 408.32
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "uid": "test-user-123",
+          "email": "test@example.com",
+          "displayName": "Test User",
+          "photoURL": "",
+          "emailVerified": true,
+          "accountStatus": "active",
+          "subscription": {
+            "tier": "free",
+            "status": "active",
+            "stripeCustomerId": null
+          },
+          "billing": {
+            "provider": null,
+            "customerId": null,
+            "plan": "free",
+            "status": "active",
+            "startedAt": null,
+            "renewedAt": null
+          },
+          "credits": {
+            "balance": 13,
+            "totalPurchased": 0,
+            "totalSpent": 0,
+            "lastPurchaseAt": null,
+            "starterGrantUsed": true
+          },
+          "preferences": {
+            "theme": "dark",
+            "notifications": {
+              "email": true
+            },
+            "updatedAt": "2025-09-02T17:56:24.051000Z"
+          },
+          "stats": {
+            "promptsCreated": 0,
+            "ideasGenerated": 0,
+            "testsRun": 0,
+            "marketplaceSales": 0,
+            "totalEarnings": 0,
+            "averageRating": 0,
+            "totalReviews": 0,
+            "followersCount": 0,
+            "followingCount": 0
+          },
+          "createdAt": "2025-09-02T13:27:55.911000+00:00",
+          "createdAtEpoch": 1756819675911,
+          "lastLoginAt": "2025-09-02T17:59:37.907000+00:00",
+          "lastActiveAt": "2025-09-02T17:59:37.907000+00:00",
+          "partnership": {
+            "isPartner": false,
+            "partnerTier": null,
+            "applicationStatus": "none"
+          },
+          "security": {
+            "twoFactorEnabled": false,
+            "lastPasswordChange": null,
+            "suspiciousActivityDetected": false,
+            "gdprConsent": false,
+            "gdprConsentDate": null,
+            "dataRetentionUntil": null
+          },
+          "profile": {
+            "displayName": "",
+            "bio": "",
+            "website": "",
+            "location": "",
+            "company": "",
+            "jobTitle": "",
+            "expertise": "",
+            "socialLinks": {},
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+          },
+          "version": 1
+        },
+        "message": "User profile fetched"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 7.0
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/credits",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "credits": 13,
+          "subscriptionCredits": 0,
+          "totalAvailable": 13,
+          "lastPurchase": null,
+          "creditHistory": {}
+        },
+        "message": "Credits fetched successfully"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 12.5
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/prompts/",
+      "description": "Create prompt",
+      "success": false,
+      "status_code": 422,
+      "response_data": {
+        "detail": [
+          {
+            "type": "missing",
+            "loc": [
+              "body",
+              "body"
+            ],
+            "msg": "Field required",
+            "input": {
+              "title": "Test Prompt test-f0eeb91b",
+              "content": "You are a helpful assistant. Help with {task}.",
+              "category": "general"
+            }
+          },
+          {
+            "type": "missing",
+            "loc": [
+              "body",
+              "role"
+            ],
+            "msg": "Field required",
+            "input": {
+              "title": "Test Prompt test-f0eeb91b",
+              "content": "You are a helpful assistant. Help with {task}.",
+              "category": "general"
+            }
+          }
+        ]
+      },
+      "error_type": "validation_error",
+      "error_message": "",
+      "execution_time": 14.01
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/prompts/arsenal",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "status": "success",
+        "data": {
+          "prompts": [
+            {
+              "user_id": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "222da3bc-c199-41a2-8af7-cd8761cc8301",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T17:57:10.625000+00:00",
+              "updated_at": "2025-09-02T17:57:10.625000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "2b56f835-f73b-4edf-8682-7f5fee0cc703"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "fc24b51c-932d-48cd-aaed-214c5ae8f86d",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T17:53:31.585000+00:00",
+              "updated_at": "2025-09-02T17:53:31.585000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "5f7c9b5d-afc6-40fc-8e7c-8db61f888755"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "Test Validation Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "9f4e0129-0e8d-46a0-88a1-ce96e343b62a",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T17:49:38.025000+00:00",
+              "updated_at": "2025-09-02T17:49:38.025000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "2862edd1-f715-4899-b8fd-2ec2e08e0e07"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "13200b48-a227-4955-8f6e-5384e205810b",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T17:39:51.122000+00:00",
+              "updated_at": "2025-09-02T17:39:51.122000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "b51bbf7e-07c5-4c96-9aa6-3086d3c857c9"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "da5c2125-d778-4b78-8c40-e4e8431365bb",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T16:09:38.191000+00:00",
+              "updated_at": "2025-09-02T16:09:38.191000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "d58672d9-a033-478d-8dcc-7f156a7ad6a8"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "6a5965b3-d36b-45ce-91de-2cd1c3abb0b3",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T16:06:53.992000+00:00",
+              "updated_at": "2025-09-02T16:06:53.992000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "450e5d8e-d7e8-4876-8bce-dc376b0d1aac"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "1144e21d-42af-454d-b887-8866460f1cf8",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T16:05:31.610000+00:00",
+              "updated_at": "2025-09-02T16:05:31.610000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "87a8e112-232f-46c3-b56d-a9bf3cdcf6cd"
+            },
+            {
+              "user_id": "test-user-123",
+              "title": "API Test Prompt",
+              "description": "",
+              "content": "Write a professional email about {topic}",
+              "role": "You are a professional email writing assistant",
+              "category": "general",
+              "tags": [],
+              "difficulty": "beginner",
+              "type": "text",
+              "status": "active",
+              "visibility": "private",
+              "is_template": false,
+              "is_featured": false,
+              "version": 1,
+              "latest_version_id": "b00398e4-ef66-4f5f-9049-ef820a820a79",
+              "performance": {
+                "rating": 0,
+                "effectiveness": 0,
+                "test_count": 0,
+                "success_rate": 0,
+                "avg_response_time": 0
+              },
+              "analytics": {
+                "view_count": 0,
+                "use_count": 0,
+                "share_count": 0,
+                "like_count": 0,
+                "download_count": 0,
+                "comment_count": 0
+              },
+              "collaboration": {
+                "is_collaborative": false,
+                "allowed_users": [],
+                "permissions": {},
+                "active_editors": []
+              },
+              "created_at": "2025-09-02T16:00:50.972000+00:00",
+              "updated_at": "2025-09-02T16:00:50.972000+00:00",
+              "created_by": "test-user-123",
+              "last_modified_by": "test-user-123",
+              "id": "4f8c896f-2cc1-4f88-bff6-84a7a202515c"
+            }
+          ],
+          "pagination": {
+            "limit": 10,
+            "offset": 0,
+            "total": 8,
+            "current_page": 1,
+            "total_pages": 1,
+            "has_next": false,
+            "has_prev": false
+          },
+          "filters": {
+            "search": null,
+            "status": null
+          }
+        },
+        "message": "Arsenal fetched successfully"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 12.51
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/remix-prompt",
+      "description": "Remix prompt",
+      "success": false,
+      "status_code": 422,
+      "response_data": {
+        "detail": [
+          {
+            "type": "missing",
+            "loc": [
+              "body",
+              "prompt_body"
+            ],
+            "msg": "Field required",
+            "input": {
+              "prompt_text": "Write a professional email"
+            }
+          }
+        ]
+      },
+      "error_type": "validation_error",
+      "error_message": "",
+      "execution_time": 9.01
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/demon/route",
+      "description": "Demon engine",
+      "success": false,
+      "status_code": 401,
+      "response_data": {
+        "detail": "Invalid token"
+      },
+      "error_type": "auth_error",
+      "error_message": "",
+      "execution_time": 7.0
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/search?q=test&limit=5",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "listings": [],
+        "limit": 5,
+        "offset": 0,
+        "total": 0
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 28.52
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/listings",
+      "description": "",
+      "success": false,
+      "status_code": 404,
+      "response_data": {
+        "detail": "Marketplace prompt not found"
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 18.01
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/billing/tiers",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "tiers": [
+          {
+            "id": "free",
+            "priceMonthUsd": 0,
+            "monthlyCredits": 0,
+            "starterCredits": 25,
+            "rollover": false,
+            "dailyCap": 10,
+            "routes": [
+              "chat.free.*",
+              "editor.free.vscode",
+              "web.free.*"
+            ]
+          },
+          {
+            "id": "pro",
+            "priceMonthUsd": 12,
+            "monthlyCredits": 500,
+            "starterCredits": 0,
+            "rollover": true,
+            "dailyCap": null,
+            "routes": [
+              "chat.pro.*",
+              "editor.pro.vscode",
+              "web.pro.*",
+              "agent.pro.cursor"
+            ],
+            "burst": {
+              "count": 5,
+              "perSeconds": 10
+            },
+            "paddlePriceId": "pri_01k3tkqh8xb2ntqke4c5pmnz0n"
+          },
+          {
+            "id": "team",
+            "priceMonthUsd": 49,
+            "monthlyCredits": 2000,
+            "starterCredits": 0,
+            "rollover": true,
+            "dailyCap": null,
+            "routes": [
+              "*"
+            ],
+            "shared": true,
+            "burst": {
+              "count": 10,
+              "perSeconds": 10
+            },
+            "paddlePriceId": "pri_01k3tskgwvddn6d1vehrvqgq02"
+          }
+        ]
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 10.53
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/billing/me/entitlements",
+      "description": "",
+      "success": false,
+      "status_code": 200,
+      "response_data": {
+        "plan": "free",
+        "balance": 13,
+        "monthlyCredits": 0,
+        "starterGrantUsed": true,
+        "dailyCap": 10,
+        "burst": null,
+        "routesAllowed": [
+          "chat.free.*",
+          "editor.free.vscode",
+          "web.free.*"
+        ],
+        "subject": {
+          "type": "user",
+          "id": "test-user-123"
+        }
+      },
+      "error_type": "unknown_error",
+      "error_message": "'<=' not supported between instances of 'int' and 'str'",
+      "execution_time": 10.03
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/packaging/manage-bulk",
+      "description": "Bulk package (KNOWN BROKEN)",
+      "success": false,
+      "status_code": 404,
+      "response_data": {
+        "detail": "Package 'test123' not found"
+      },
+      "error_type": "not_found",
+      "error_message": "",
+      "execution_time": 21.52
+    }
+  ]
+}

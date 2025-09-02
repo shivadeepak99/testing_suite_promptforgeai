@@ -1,0 +1,51 @@
+{
+  "generated_at": "2025-09-03T00:17:53.608140",
+  "total_fixes": 5,
+  "summary": {
+    "critical_fixes": 2,
+    "high_priority": 1,
+    "medium_priority": 2
+  },
+  "fixes": [
+    {
+      "file": "backend/models/prompt.py",
+      "issue": "API expects 'body' field that doesn't exist in database",
+      "current_code": "\nclass PromptCreate(BaseModel):\n    body: str  # \u274c This field doesn't exist in database\n    title: str\n    content: str\n            ",
+      "fixed_code": "\nclass PromptCreate(BaseModel):\n    title: str\n    description: Optional[str] = \"\"\n    content: str  # This is the actual content field from database\n    role: Optional[str] = \"\"\n    category: str = \"general\"\n    tags: List[str] = []\n    difficulty: str = \"beginner\"\n    type: str = \"text\"\n    visibility: str = \"private\"\n    is_template: bool = False\n    is_featured: bool = False\n    # Database also has: performance, analytics, collaboration objects\n            ",
+      "severity": "CRITICAL",
+      "test_fix": "This will fix the 422 error on POST /api/v1/prompts/prompts/"
+    },
+    {
+      "file": "backend/models/idea.py",
+      "issue": "API expects 'complexity' field that doesn't exist in database",
+      "current_code": "\nclass IdeaGenerate(BaseModel):\n    complexity: str  # \u274c This field doesn't exist in database\n    prompt: str\n            ",
+      "fixed_code": "\nclass IdeaGenerate(BaseModel):\n    prompt: str\n    categories: List[str]\n    count: Optional[int] = 3\n    tags: Optional[List[str]] = []\n    # Database has quality_score, feasibility, estimated_time_to_market\n    # Don't require complexity - it's not in the schema\n            ",
+      "severity": "CRITICAL",
+      "test_fix": "This will fix the 422 error on POST /api/v1/ideas/generate"
+    },
+    {
+      "file": "backend/models/user.py",
+      "issue": "API returns camelCase but database uses snake_case",
+      "current_code": "\nclass UserResponse(BaseModel):\n    displayName: str  # \u274c Database has display_name\n    emailVerified: bool  # \u274c Database has email_verified\n    accountStatus: str  # \u274c Database has account_status\n            ",
+      "fixed_code": "\n# Option A: Make API use snake_case (Recommended)\nclass UserResponse(BaseModel):\n    uid: str\n    email: str\n    display_name: str  # Matches database field\n    email_verified: bool  # Matches database field\n    account_status: str  # Matches database field\n    last_active_at: Optional[datetime]\n    login_seq: int\n    version: int\n    \n    class Config:\n        # This will automatically convert database snake_case to API snake_case\n        orm_mode = True\n\n# Option B: Keep camelCase but add field mapping\nclass UserResponse(BaseModel):\n    uid: str\n    email: str\n    displayName: str = Field(alias=\"display_name\")\n    emailVerified: bool = Field(alias=\"email_verified\") \n    accountStatus: str = Field(alias=\"account_status\")\n    lastActiveAt: Optional[datetime] = Field(alias=\"last_active_at\")\n    loginSeq: int = Field(alias=\"login_seq\")\n    version: int\n    \n    class Config:\n        allow_population_by_field_name = True\n            ",
+      "severity": "HIGH",
+      "test_fix": "This will fix schema mismatches in user endpoints"
+    },
+    {
+      "file": "backend/routers/users.py",
+      "issue": "Missing entitlements endpoint",
+      "current_code": "# Endpoint /api/v1/users/me/entitlements returns 404",
+      "fixed_code": "\n@router.get(\"/me/entitlements\")\nasync def get_user_entitlements(current_user: User = Depends(get_current_user)):\n    '''Get user entitlements/permissions'''\n    # Based on database analysis, this should return user permissions\n    return {\n        \"plan\": current_user.account_status,\n        \"features\": [], # Add actual features based on plan\n        \"limits\": {\n            \"prompts_per_month\": 100,  # Based on plan\n            \"ideas_per_month\": 50\n        }\n    }\n            ",
+      "severity": "MEDIUM",
+      "test_fix": "This will fix the 404 error on GET /api/v1/users/me/entitlements"
+    },
+    {
+      "file": "backend/routers/notifications.py",
+      "issue": "Missing notifications list endpoint",
+      "current_code": "# Endpoint /api/v1/notifications/ returns 404",
+      "fixed_code": "\n@router.get(\"/\")\nasync def get_notifications(current_user: User = Depends(get_current_user)):\n    '''Get user notifications'''\n    # This endpoint is referenced but doesn't exist\n    return {\n        \"notifications\": [],\n        \"unread_count\": 0\n    }\n            ",
+      "severity": "MEDIUM",
+      "test_fix": "This will fix the 404 error on GET /api/v1/notifications/"
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "database_name": "promptforge",
+  "analysis_timestamp": "2025-09-02T23:46:49.852433",
+  "total_collections": 23,
+  "collections": {
+    "analytics_jobs": {
+      "name": "analytics_jobs",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "aj_user_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "job_id": 1
+          },
+          "name": "aj_job_id_1",
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "created_at": -1
+          },
+          "name": "aj_status_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "prompts": {
+      "name": "prompts",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "notifications": {
+      "name": "notifications",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "marketplace_listings": {
+      "name": "marketplace_listings",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "createdAt": -1
+          },
+          "name": "mkt_status_category_createdAt_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "analytics.purchaseCount": -1
+          },
+          "name": "mkt_status_category_purchases_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "price": 1
+          },
+          "name": "mkt_status_category_price_1_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "category": 1,
+            "created_at": -1
+          },
+          "name": "mkt_status_category_created_at_1_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "downloads": -1
+          },
+          "name": "mkt_status_downloads_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "rating": -1
+          },
+          "name": "mkt_status_rating_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "price": 1
+          },
+          "name": "mkt_status_price_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "id": 1
+          },
+          "name": "mkt_id_1",
+          "sparse": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "title_lowercase": 1
+          },
+          "name": "mkt_title_lowercase_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "tags": 1
+          },
+          "name": "mkt_tags_1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "listings": {
+      "name": "listings",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "seller_id": 1,
+            "created_at": -1
+          },
+          "name": "seller_id_1_created_at_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "projects": {
+      "name": "projects",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "owner_id": 1
+          },
+          "name": "owner_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "team_id": 1
+          },
+          "name": "team_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "created_at_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "web_vitals": {
+      "name": "web_vitals",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "usage": {
+      "name": "usage",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "transactions": {
+      "name": "transactions",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "demo_bookings": {
+      "name": "demo_bookings",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "preferred_date": 1,
+            "status": 1
+          },
+          "name": "demo_preferred_date_status_1_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "demo_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "analytics_events": {
+      "name": "analytics_events",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1
+          },
+          "name": "user_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "event_type": 1
+          },
+          "name": "event_type_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "timestamp": -1
+          },
+          "name": "timestamp_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "prompt_purchases": {
+      "name": "prompt_purchases",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "listing_id": 1
+          },
+          "name": "pp_user_listing_unique",
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "pp_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "marketplace_purchases": {
+      "name": "marketplace_purchases",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "buyer_id": 1,
+            "created_at": -1
+          },
+          "name": "mp_buyer_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "prompt_id": 1,
+            "buyer_id": 1
+          },
+          "name": "mp_prompt_buyer_1_1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "export_jobs": {
+      "name": "export_jobs",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "export_jobs_user_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "status": 1,
+            "created_at": -1
+          },
+          "name": "export_jobs_status_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "webhook_events": {
+      "name": "webhook_events",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "event_id": 1
+          },
+          "name": "event_id_1",
+          "unique": true
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "prompt_versions": {
+      "name": "prompt_versions",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "ideas": {
+      "name": "ideas",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "auth_logs": {
+      "name": "auth_logs",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "analytics": {
+      "name": "analytics",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "analytics_user_created_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "endpoint": 1,
+            "created_at": -1
+          },
+          "name": "analytics_endpoint_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "users": {
+      "name": "users",
+      "error": "'Collection' object is not callable. If you meant to call the 'stats' method on a 'Collection' object it is failing because no such method exists."
+    },
+    "reviews": {
+      "name": "reviews",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "userId": 1
+          },
+          "name": "reviews_prompt_user_unique",
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "createdAt": -1
+          },
+          "name": "reviews_prompt_createdAt_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "helpfulCount": -1
+          },
+          "name": "reviews_prompt_helpful_1_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "promptId": 1,
+            "rating": -1
+          },
+          "name": "reviews_prompt_rating_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "exports": {
+      "name": "exports",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "user_id": 1,
+            "created_at": -1
+          },
+          "name": "exports_user_created_1_-1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    },
+    "teams": {
+      "name": "teams",
+      "document_count": 0,
+      "indexes": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "owner_id": 1
+          },
+          "name": "owner_id_1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "created_at": -1
+          },
+          "name": "created_at_-1"
+        },
+        {
+          "v": 2,
+          "key": {
+            "members.user_id": 1
+          },
+          "name": "members.user_id_1"
+        }
+      ],
+      "sample_documents": [],
+      "field_analysis": {},
+      "stats": {}
+    }
+  }
+}
