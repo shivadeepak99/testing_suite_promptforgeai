@@ -1,0 +1,103 @@
+{
+  "summary": {
+    "total_tests": 17,
+    "passed_tests": 0,
+    "success_rate": 0.0,
+    "timestamp": 1756726438.9809926
+  },
+  "detailed_results": [
+    {
+      "test_type": "input_validation",
+      "results": [
+        {
+          "test": "Prompt Injection Test",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]",
+          "passed": false
+        },
+        {
+          "test": "XSS Test",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]",
+          "passed": false
+        },
+        {
+          "test": "SQL Injection Test",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]",
+          "passed": false
+        },
+        {
+          "test": "Valid Input Test",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]",
+          "passed": false
+        }
+      ]
+    },
+    {
+      "test_type": "rate_limiting",
+      "total_requests": 10,
+      "rate_limited_count": 0,
+      "results": [
+        {
+          "request": 0,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 1,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 2,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 3,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 4,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 5,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 6,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 7,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 8,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "request": 9,
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        }
+      ]
+    },
+    {
+      "test_type": "circuit_breaker",
+      "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+    },
+    {
+      "test_type": "monitoring_endpoints",
+      "results": [
+        {
+          "endpoint": "/api/v1/monitoring/health",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "endpoint": "/api/v1/monitoring/health/detailed",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        },
+        {
+          "endpoint": "/api/v1/monitoring/metrics",
+          "error": "Cannot connect to host localhost:8000 ssl:default [The remote computer refused the network connection]"
+        }
+      ]
+    }
+  ]
+}
