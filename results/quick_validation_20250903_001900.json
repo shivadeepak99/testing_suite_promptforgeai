@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-09-03T00:18:40.244920",
+  "critical_tests": [
+    {
+      "test": "Prompts Creation Schema Fix",
+      "endpoint": "POST /api/v1/prompts/prompts/",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/v1/prompts/prompts/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000211DB7C7850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "fix_applied": false
+    },
+    {
+      "test": "Ideas Generation Schema Fix",
+      "endpoint": "POST /api/v1/ideas/generate",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/v1/ideas/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000211DB7D9F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "fix_applied": false
+    },
+    {
+      "test": "Missing Endpoint Fix - /api/v1/users/me/entitlements",
+      "endpoint": "GET /api/v1/users/me/entitlements",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/v1/users/me/entitlements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000211DB7E4190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "fix_applied": false
+    },
+    {
+      "test": "Missing Endpoint Fix - /api/v1/notifications/",
+      "endpoint": "GET /api/v1/notifications/",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/v1/notifications/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000211DB7E6310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "fix_applied": false
+    },
+    {
+      "test": "User Field Naming Consistency",
+      "endpoint": "GET /api/v1/users/me",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/v1/users/me (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000211DB7D8910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "fix_applied": false
+    }
+  ],
+  "summary": {
+    "total_critical_tests": 5,
+    "fixes_applied": 0,
+    "fixes_remaining": 5,
+    "sync_progress": "0/5 (0.0%)"
+  }
+}
