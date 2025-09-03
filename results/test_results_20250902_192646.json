@@ -1,0 +1,324 @@
+[
+  {
+    "test": "Health Check",
+    "success": true,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "status": "ok"
+    },
+    "error": null
+  },
+  {
+    "test": "User Authentication - Create Profile",
+    "success": true,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "status": "success",
+      "data": {
+        "uid": "test-user-123",
+        "email": "test@example.com",
+        "displayName": "Test User",
+        "photoURL": "",
+        "emailVerified": true,
+        "accountStatus": "active",
+        "subscription": {
+          "tier": "free",
+          "status": "active",
+          "stripeCustomerId": null
+        },
+        "billing": {
+          "provider": null,
+          "customerId": null,
+          "plan": "free",
+          "status": "active",
+          "startedAt": null,
+          "renewedAt": null
+        },
+        "credits": {
+          "balance": 50,
+          "totalPurchased": 0,
+          "totalSpent": 0,
+          "lastPurchaseAt": null,
+          "starterGrantUsed": true
+        },
+        "preferences": {
+          "theme": "system",
+          "language": "en",
+          "timezone": "UTC",
+          "notifications": {
+            "marketing": false,
+            "product": true,
+            "security": true
+          },
+          "privacy": {
+            "discoverable": false,
+            "showProfile": true
+          },
+          "interface": {
+            "density": "comfortable"
+          }
+        },
+        "stats": {
+          "promptsCreated": 0,
+          "ideasGenerated": 0,
+          "testsRun": 0,
+          "marketplaceSales": 0,
+          "totalEarnings": 0,
+          "averageRating": 0,
+          "totalReviews": 0,
+          "followersCount": 0,
+          "followingCount": 0
+        },
+        "createdAt": "2025-09-02T13:27:55.911000+00:00",
+        "createdAtEpoch": 1756819675911,
+        "lastLoginAt": "2025-09-02T13:56:46.209000+00:00",
+        "firstLogin": false
+      },
+      "message": "Onboarding complete"
+    },
+    "error": null
+  },
+  {
+    "test": "Get User Profile",
+    "success": true,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "status": "success",
+      "data": {
+        "uid": "test-user-123",
+        "email": "test@example.com",
+        "displayName": "Test User",
+        "photoURL": "",
+        "emailVerified": true,
+        "accountStatus": "active",
+        "subscription": {
+          "tier": "free",
+          "status": "active",
+          "stripeCustomerId": null
+        },
+        "billing": {
+          "provider": null,
+          "customerId": null,
+          "plan": "free",
+          "status": "active",
+          "startedAt": null,
+          "renewedAt": null
+        },
+        "credits": {
+          "balance": 50,
+          "totalPurchased": 0,
+          "totalSpent": 0,
+          "lastPurchaseAt": null,
+          "starterGrantUsed": true
+        },
+        "preferences": {
+          "theme": "system",
+          "language": "en",
+          "timezone": "UTC",
+          "notifications": {
+            "marketing": false,
+            "product": true,
+            "security": true
+          },
+          "privacy": {
+            "discoverable": false,
+            "showProfile": true
+          },
+          "interface": {
+            "density": "comfortable"
+          }
+        },
+        "stats": {
+          "promptsCreated": 0,
+          "ideasGenerated": 0,
+          "testsRun": 0,
+          "marketplaceSales": 0,
+          "totalEarnings": 0,
+          "averageRating": 0,
+          "totalReviews": 0,
+          "followersCount": 0,
+          "followingCount": 0
+        },
+        "createdAt": "2025-09-02T13:27:55.911000+00:00",
+        "createdAtEpoch": 1756819675911,
+        "lastLoginAt": "2025-09-02T13:56:46.209000+00:00",
+        "lastActiveAt": "2025-09-02T13:56:46.209000+00:00",
+        "partnership": {
+          "isPartner": false,
+          "partnerTier": null,
+          "applicationStatus": "none"
+        },
+        "security": {
+          "twoFactorEnabled": false,
+          "lastPasswordChange": null,
+          "suspiciousActivityDetected": false,
+          "gdprConsent": false,
+          "gdprConsentDate": null,
+          "dataRetentionUntil": null
+        },
+        "profile": {
+          "displayName": "",
+          "bio": "",
+          "website": "",
+          "location": "",
+          "company": "",
+          "jobTitle": "",
+          "expertise": "",
+          "socialLinks": {},
+          "twitter": "",
+          "github": "",
+          "linkedin": ""
+        },
+        "version": 1
+      },
+      "message": "User profile fetched"
+    },
+    "error": null
+  },
+  {
+    "test": "Create Prompt",
+    "success": false,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "detail": [
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "body"
+          ],
+          "msg": "Field required",
+          "input": {
+            "title": "Test Marketing Email Template",
+            "content": "Write a professional marketing email for a new product launch",
+            "category": "marketing",
+            "tags": [
+              "email",
+              "marketing",
+              "professional"
+            ],
+            "is_public": true,
+            "description": "A template for creating marketing emails"
+          }
+        },
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "role"
+          ],
+          "msg": "Field required",
+          "input": {
+            "title": "Test Marketing Email Template",
+            "content": "Write a professional marketing email for a new product launch",
+            "category": "marketing",
+            "tags": [
+              "email",
+              "marketing",
+              "professional"
+            ],
+            "is_public": true,
+            "description": "A template for creating marketing emails"
+          }
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "test": "List Prompts",
+    "success": false,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "detail": "Method Not Allowed"
+    },
+    "error": null
+  },
+  {
+    "test": "AI Prompt Analysis",
+    "success": false,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "detail": "Invalid token"
+    },
+    "error": null
+  },
+  {
+    "test": "AI Quick Suggestions",
+    "success": false,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "detail": "Invalid token"
+    },
+    "error": null
+  },
+  {
+    "test": "Get Workflow Templates",
+    "success": true,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "success": true,
+      "templates": [
+        {
+          "template_id": "builtin_content_creation",
+          "name": "Content Creation Workflow",
+          "description": "Automated workflow for creating high-quality content",
+          "category": "content",
+          "step_count": 5,
+          "variables": [
+            "topic",
+            "target_audience",
+            "content_type"
+          ],
+          "created_at": "2025-09-02T13:56:24.141214",
+          "version": "1.0"
+        },
+        {
+          "template_id": "builtin_code_review",
+          "name": "Code Review Workflow",
+          "description": "Automated code review and improvement workflow",
+          "category": "development",
+          "step_count": 4,
+          "variables": [
+            "code",
+            "language",
+            "review_type"
+          ],
+          "created_at": "2025-09-02T13:56:24.141214",
+          "version": "1.0"
+        }
+      ],
+      "total_count": 2,
+      "message": "Workflow templates retrieved successfully"
+    },
+    "error": null
+  },
+  {
+    "test": "Start Workflow",
+    "success": false,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "detail": "Authentication required"
+    },
+    "error": null
+  },
+  {
+    "test": "Analytics Dashboard",
+    "success": true,
+    "timestamp": "2025-09-02 19:26:46",
+    "response_data": {
+      "status": "success",
+      "data": {
+        "overview": {
+          "total_prompts": 0,
+          "listings_sold_in_period": 0,
+          "revenue_earned_in_period": 0
+        },
+        "popular_categories": [],
+        "message": "Upgrade to Pro for full analytics dashboard."
+      },
+      "message": "Basic analytics for free users."
+    },
+    "error": null
+  }
+]

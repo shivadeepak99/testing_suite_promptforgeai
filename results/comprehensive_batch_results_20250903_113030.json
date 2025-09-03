@@ -1,0 +1,2680 @@
+{
+  "test_run": {
+    "timestamp": "2025-09-03T11:30:30.649132",
+    "base_url": "http://localhost:8000",
+    "total_batches": 21,
+    "total_endpoints": 148
+  },
+  "overall_stats": {
+    "successful": 43,
+    "failed": 105,
+    "success_rate": 29.054054054054053,
+    "avg_response_time": 149.7705256616747
+  },
+  "batch_results": [
+    {
+      "batch_number": 1,
+      "batch_name": "Health & Debug",
+      "total_endpoints": 5,
+      "successful": 5,
+      "failed": 0,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/",
+          "status_code": 200,
+          "response_time": 2413.564682006836,
+          "success": true,
+          "response_preview": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/health",
+          "status_code": 200,
+          "response_time": 25.53248405456543,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/health",
+          "status_code": 200,
+          "response_time": 29.06489372253418,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/debug/auth-headers",
+          "status_code": 200,
+          "response_time": 25.523662567138672,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/debug/test-auth",
+          "status_code": 200,
+          "response_time": 53.55405807495117,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 11:29:44.248343",
+      "avg_response_time": 509.4479560852051,
+      "end_time": "2025-09-03 11:29:47.322261",
+      "duration": 3.073918,
+      "success_rate": 100.0
+    },
+    {
+      "batch_number": 2,
+      "batch_name": "User Management",
+      "total_endpoints": 10,
+      "successful": 10,
+      "failed": 0,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/users/auth/complete",
+          "status_code": 200,
+          "response_time": 703.7880420684814,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/me",
+          "status_code": 200,
+          "response_time": 45.53794860839844,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/users/me/profile",
+          "status_code": 200,
+          "response_time": 32.52601623535156,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/credits",
+          "status_code": 200,
+          "response_time": 65.09089469909668,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/preferences",
+          "status_code": 200,
+          "response_time": 96.07672691345215,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/users/preferences",
+          "status_code": 200,
+          "response_time": 51.061153411865234,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/stats",
+          "status_code": 200,
+          "response_time": 115.60988426208496,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/me/usage",
+          "status_code": 200,
+          "response_time": 60.599327087402344,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/users/usage/track",
+          "status_code": 200,
+          "response_time": 30.0137996673584,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/export-data",
+          "status_code": 200,
+          "response_time": 186.1417293548584,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 11:29:47.357025",
+      "avg_response_time": 138.64455223083496,
+      "end_time": "2025-09-03 11:29:49.800987",
+      "duration": 2.443962,
+      "success_rate": 100.0
+    },
+    {
+      "batch_number": 3,
+      "batch_name": "Core Prompts",
+      "total_endpoints": 8,
+      "successful": 0,
+      "failed": 8,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/arsenal",
+          "status_code": 404,
+          "response_time": 66.06578826904297,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/",
+          "status_code": 404,
+          "response_time": 105.99851608276367,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/public",
+          "status_code": 404,
+          "response_time": 37.08291053771973,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/test-drive-by-id",
+          "status_code": 404,
+          "response_time": 196.66099548339844,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/test-prompt-123",
+          "status_code": 404,
+          "response_time": 15.523910522460938,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/prompts/test-prompt-123",
+          "status_code": 404,
+          "response_time": 20.272254943847656,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/test-prompt-123/versions",
+          "status_code": 404,
+          "response_time": 67.4903392791748,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/bulk-action",
+          "status_code": 404,
+          "response_time": 28.109073638916016,
+          "success": false,
+          "response_preview": "{\"detail\":\"Not Found\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:29:49.824032",
+      "avg_response_time": 67.15047359466553,
+      "end_time": "2025-09-03 11:29:51.412066",
+      "duration": 1.588034,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 4,
+      "batch_name": "AI Features",
+      "total_endpoints": 5,
+      "successful": 0,
+      "failed": 5,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/remix-prompt",
+          "status_code": 422,
+          "response_time": 45.06349563598633,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_body\"],\"msg\":\"Field required\""
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/architect-prompt",
+          "status_code": 422,
+          "response_time": 48.055171966552734,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"description\"],\"msg\":\"Field required\""
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/fuse-prompts",
+          "status_code": 422,
+          "response_time": 43.55907440185547,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/generate-enhanced-prompt",
+          "status_code": 422,
+          "response_time": 38.01393508911133,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/analyze-prompt",
+          "status_code": 422,
+          "response_time": 39.999961853027344,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"analysisType\"],\"msg\":\"Field required"
+        }
+      ],
+      "start_time": "2025-09-03 11:29:51.432122",
+      "avg_response_time": 42.93832778930664,
+      "end_time": "2025-09-03 11:29:52.226019",
+      "duration": 0.793897,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 5,
+      "batch_name": "Marketplace Core",
+      "total_endpoints": 9,
+      "successful": 2,
+      "failed": 7,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/search?q=business",
+          "status_code": 200,
+          "response_time": 26.0162353515625,
+          "success": true,
+          "response_preview": "Keys: listings, limit, offset"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/listings",
+          "status_code": 404,
+          "response_time": 98.64234924316406,
+          "success": false,
+          "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/my-listings",
+          "status_code": 200,
+          "response_time": 149.17945861816406,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/marketplace/list-prompt",
+          "status_code": 422,
+          "response_time": 20.066499710083008,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"price_credits\"],\"msg\":\"Field require"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/test-123",
+          "status_code": 404,
+          "response_time": 140.669584274292,
+          "success": false,
+          "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/preview/test-123",
+          "status_code": 500,
+          "response_time": 19.559144973754883,
+          "success": false,
+          "response_preview": "{\"detail\":\"Preview failed\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/marketplace/rate",
+          "status_code": 500,
+          "response_time": 73.07600975036621,
+          "success": false,
+          "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/test-123/reviews",
+          "status_code": 500,
+          "response_time": 2075.4647254943848,
+          "success": false,
+          "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/test-123/analytics",
+          "status_code": 500,
+          "response_time": 2074.277639389038,
+          "success": false,
+          "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+        }
+      ],
+      "start_time": "2025-09-03 11:29:52.331149",
+      "avg_response_time": 519.6612940894233,
+      "end_time": "2025-09-03 11:29:57.954108",
+      "duration": 5.622959,
+      "success_rate": 22.22222222222222
+    },
+    {
+      "batch_number": 6,
+      "batch_name": "Search & Discovery",
+      "total_endpoints": 2,
+      "successful": 1,
+      "failed": 1,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/search/?q=email&type=prompts",
+          "status_code": 200,
+          "response_time": 2058.833122253418,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/search/users?q=test",
+          "status_code": 422,
+          "response_time": 13.000726699829102,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"query\"],\"msg\":\"Field required\",\"inp"
+        }
+      ],
+      "start_time": "2025-09-03 11:29:57.955130",
+      "avg_response_time": 1035.9169244766235,
+      "end_time": "2025-09-03 11:30:00.235576",
+      "duration": 2.280446,
+      "success_rate": 50.0
+    },
+    {
+      "batch_number": 7,
+      "batch_name": "Projects Core",
+      "total_endpoints": 4,
+      "successful": 0,
+      "failed": 4,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/projects/test-project-123",
+          "status_code": 404,
+          "response_time": 66.54930114746094,
+          "success": false,
+          "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/projects/test-project-123/prompts",
+          "status_code": 404,
+          "response_time": 69.56911087036133,
+          "success": false,
+          "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/projects/test-project-123/prompts",
+          "status_code": 404,
+          "response_time": 100.60524940490723,
+          "success": false,
+          "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+        },
+        {
+          "method": "DELETE",
+          "endpoint": "/api/v1/projects/test-project-123",
+          "status_code": 404,
+          "response_time": 33.99491310119629,
+          "success": false,
+          "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:00.256589",
+      "avg_response_time": 67.67964363098145,
+      "end_time": "2025-09-03 11:30:00.955150",
+      "duration": 0.698561,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 8,
+      "batch_name": "Smart Workflows",
+      "total_endpoints": 14,
+      "successful": 3,
+      "failed": 11,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/templates",
+          "status_code": 200,
+          "response_time": 25.015830993652344,
+          "success": true,
+          "response_preview": "Workflow templates retrieved successfully"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/templates",
+          "status_code": 403,
+          "response_time": 102.58030891418457,
+          "success": false,
+          "response_preview": "{\"detail\":\"Custom workflow templates require Pro+ plan\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/templates/test-template-123",
+          "status_code": 404,
+          "response_time": 120.18108367919922,
+          "success": false,
+          "response_preview": "{\"detail\":\"Template not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/start",
+          "status_code": 401,
+          "response_time": 47.85346984863281,
+          "success": false,
+          "response_preview": "{\"detail\":\"Authentication required\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/status/test-instance-123",
+          "status_code": 404,
+          "response_time": 44.28696632385254,
+          "success": false,
+          "response_preview": "{\"detail\":\"Workflow instance not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/results/test-instance-123",
+          "status_code": 404,
+          "response_time": 64.05043601989746,
+          "success": false,
+          "response_preview": "{\"detail\":\"Workflow instance not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/control/test-instance-123/pause",
+          "status_code": 400,
+          "response_time": 44.56305503845215,
+          "success": false,
+          "response_preview": "{\"detail\":\"Cannot pause workflow (not found or not running)\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/control/test-instance-123/resume",
+          "status_code": 400,
+          "response_time": 30.0137996673584,
+          "success": false,
+          "response_preview": "{\"detail\":\"Cannot resume workflow (not found or not paused)\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/control/test-instance-123/cancel",
+          "status_code": 400,
+          "response_time": 17.028331756591797,
+          "success": false,
+          "response_preview": "{\"detail\":\"Cannot cancel workflow (not found or not running)\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/my-workflows",
+          "status_code": 200,
+          "response_time": 43.55335235595703,
+          "success": true,
+          "response_preview": "User workflows retrieved successfully"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/quick-start/content-creation",
+          "status_code": 401,
+          "response_time": 51.56517028808594,
+          "success": false,
+          "response_preview": "{\"detail\":\"Authentication required\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/workflows/quick-start/code-review",
+          "status_code": 401,
+          "response_time": 38.00177574157715,
+          "success": false,
+          "response_preview": "{\"detail\":\"Authentication required\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/analytics/usage",
+          "status_code": 500,
+          "response_time": 21.523237228393555,
+          "success": false,
+          "response_preview": "{\"detail\":\"Failed to retrieve analytics\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/workflows/health",
+          "status_code": 200,
+          "response_time": 155.7002067565918,
+          "success": true,
+          "response_preview": "Workflow service is healthy"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:00.992681",
+      "avg_response_time": 57.565501758030486,
+      "end_time": "2025-09-03 11:30:03.327906",
+      "duration": 2.335225,
+      "success_rate": 21.428571428571427
+    },
+    {
+      "batch_number": 9,
+      "batch_name": "Analytics Core",
+      "total_endpoints": 7,
+      "successful": 3,
+      "failed": 4,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/analytics/events",
+          "status_code": 200,
+          "response_time": 9.289264678955078,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/analytics/performance",
+          "status_code": 200,
+          "response_time": 39.61896896362305,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/analytics/dashboard",
+          "status_code": 200,
+          "response_time": 43.550729751586914,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/analytics/exports/prompts",
+          "status_code": 422,
+          "response_time": 47.54066467285156,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"export_type\"],\"msg\":\"Field required\""
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/analytics/exports/analytics",
+          "status_code": 422,
+          "response_time": 22.996902465820312,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"export_type\"],\"msg\":\"Field required\""
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/analytics/jobs/analytics",
+          "status_code": 422,
+          "response_time": 43.55311393737793,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"job_type\"],\"msg\":\"Field required\",\"i"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/analytics/jobs/analytics/test-job-123/status",
+          "status_code": 404,
+          "response_time": 62.55698204040527,
+          "success": false,
+          "response_preview": "{\"detail\":\"Job not found\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:05.351721",
+      "avg_response_time": 38.443803787231445,
+      "end_time": "2025-09-03 11:30:06.367739",
+      "duration": 1.016018,
+      "success_rate": 42.857142857142854
+    },
+    {
+      "batch_number": 10,
+      "batch_name": "Monitoring & Performance",
+      "total_endpoints": 12,
+      "successful": 2,
+      "failed": 10,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/monitoring/health",
+          "status_code": 200,
+          "response_time": 62.07776069641113,
+          "success": true,
+          "response_preview": "Status: healthy"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/monitoring/health/detailed",
+          "status_code": 401,
+          "response_time": 67.52228736877441,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/monitoring/metrics",
+          "status_code": 401,
+          "response_time": 177.10471153259277,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/monitoring/trace/test-request-123",
+          "status_code": 401,
+          "response_time": 74.07832145690918,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/monitoring/circuit-breakers",
+          "status_code": 401,
+          "response_time": 25.855302810668945,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/monitoring/circuit-breakers/test-breaker/reset",
+          "status_code": 401,
+          "response_time": 72.44491577148438,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/performance/dashboard",
+          "status_code": 422,
+          "response_time": 44.6014404296875,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/performance/slow-queries",
+          "status_code": 422,
+          "response_time": 19.001007080078125,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/performance/cache-stats",
+          "status_code": 422,
+          "response_time": 21.018028259277344,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/performance/optimize",
+          "status_code": 422,
+          "response_time": 39.0019416809082,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "DELETE",
+          "endpoint": "/api/v1/performance/cache",
+          "status_code": 422,
+          "response_time": 28.049468994140625,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/performance/health",
+          "status_code": 200,
+          "response_time": 81.00056648254395,
+          "success": true,
+          "response_preview": "Status: degraded"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:06.393279",
+      "avg_response_time": 59.31297938028971,
+      "end_time": "2025-09-03 11:30:08.846292",
+      "duration": 2.453013,
+      "success_rate": 16.666666666666664
+    },
+    {
+      "batch_number": 11,
+      "batch_name": "Intelligence Features",
+      "total_endpoints": 6,
+      "successful": 0,
+      "failed": 6,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/intelligence/analyze",
+          "status_code": 401,
+          "response_time": 7.012844085693359,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/intelligence/suggestions/quick?prompt=email",
+          "status_code": 401,
+          "response_time": 36.54789924621582,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/intelligence/templates/personalized?category=business",
+          "status_code": 401,
+          "response_time": 45.16124725341797,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/intelligence/patterns/user",
+          "status_code": 401,
+          "response_time": 47.25003242492676,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/intelligence/feedback",
+          "status_code": 401,
+          "response_time": 53.55334281921387,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/intelligence/analytics/intelligence",
+          "status_code": 401,
+          "response_time": 43.59602928161621,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:10.858618",
+      "avg_response_time": 38.85356585184733,
+      "end_time": "2025-09-03 11:30:11.745921",
+      "duration": 0.887303,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 12,
+      "batch_name": "Context Intelligence",
+      "total_endpoints": 5,
+      "successful": 0,
+      "failed": 5,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/context/analyze",
+          "status_code": 401,
+          "response_time": 17.000913619995117,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/context/quick-suggestions",
+          "status_code": 401,
+          "response_time": 36.53836250305176,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/context/follow-up-questions",
+          "status_code": 401,
+          "response_time": 38.14888000488281,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/context/enhancement-templates",
+          "status_code": 401,
+          "response_time": 49.89218711853027,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/context/domain-insights",
+          "status_code": 401,
+          "response_time": 24.579524993896484,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:11.749937",
+      "avg_response_time": 33.23197364807129,
+      "end_time": "2025-09-03 11:30:12.427986",
+      "duration": 0.678049,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 13,
+      "batch_name": "Extension Intelligence",
+      "total_endpoints": 6,
+      "successful": 1,
+      "failed": 5,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/extension/analyze-prompt",
+          "status_code": 401,
+          "response_time": 47.548770904541016,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/extension/suggestions/contextual",
+          "status_code": 401,
+          "response_time": 25.537729263305664,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/extension/enhance/selected-text",
+          "status_code": 401,
+          "response_time": 30.672311782836914,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/extension/templates/smart",
+          "status_code": 401,
+          "response_time": 49.0720272064209,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/extension/health",
+          "status_code": 200,
+          "response_time": 37.068843841552734,
+          "success": true,
+          "response_preview": "Status: healthy"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/extension/usage-stats",
+          "status_code": 401,
+          "response_time": 28.540611267089844,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:12.460001",
+      "avg_response_time": 36.40671571095785,
+      "end_time": "2025-09-03 11:30:13.321086",
+      "duration": 0.861085,
+      "success_rate": 16.666666666666664
+    },
+    {
+      "batch_number": 14,
+      "batch_name": "Engine Services",
+      "total_endpoints": 4,
+      "successful": 0,
+      "failed": 4,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompt/quick_upgrade",
+          "status_code": 401,
+          "response_time": 23.018360137939453,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompt/upgrade",
+          "status_code": 401,
+          "response_time": 49.523353576660156,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/demon/route",
+          "status_code": 401,
+          "response_time": 49.544572830200195,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/demon/v2/upgrade",
+          "status_code": 401,
+          "response_time": 27.5423526763916,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:13.353159",
+      "avg_response_time": 37.40715980529785,
+      "end_time": "2025-09-03 11:30:14.002889",
+      "duration": 0.64973,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 15,
+      "batch_name": "Vault & Ideas",
+      "total_endpoints": 8,
+      "successful": 3,
+      "failed": 5,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/vault/arsenal",
+          "status_code": 200,
+          "response_time": 99.68829154968262,
+          "success": true,
+          "response_preview": "Keys: prompts"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/vault/search?q=email",
+          "status_code": 200,
+          "response_time": 34.583091735839844,
+          "success": true,
+          "response_preview": "Keys: prompts"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/vault/save",
+          "status_code": 400,
+          "response_time": 26.077985763549805,
+          "success": false,
+          "response_preview": "{\"detail\":\"Missing prompt text or upgraded version\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/vault/list",
+          "status_code": 200,
+          "response_time": 211.151123046875,
+          "success": true,
+          "response_preview": "Keys: prompts"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/vault/test-vault-123/test-drive",
+          "status_code": 400,
+          "response_time": 20.046234130859375,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/vault/test-vault-123/versions",
+          "status_code": 400,
+          "response_time": 35.07566452026367,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+        },
+        {
+          "method": "DELETE",
+          "endpoint": "/api/v1/vault/delete/test-vault-123",
+          "status_code": 400,
+          "response_time": 183.15458297729492,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ideas/generate",
+          "status_code": 422,
+          "response_time": 70.52803039550781,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"categories\"],\"msg\":\"Field required\","
+        }
+      ],
+      "start_time": "2025-09-03 11:30:14.050954",
+      "avg_response_time": 85.03812551498413,
+      "end_time": "2025-09-03 11:30:15.666212",
+      "duration": 1.615258,
+      "success_rate": 37.5
+    },
+    {
+      "batch_number": 16,
+      "batch_name": "Business Features",
+      "total_endpoints": 8,
+      "successful": 2,
+      "failed": 6,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/packaging/test-prompt-123/package",
+          "status_code": 500,
+          "response_time": 38.063764572143555,
+          "success": false,
+          "response_preview": "{\"error\":\"We're experiencing technical difficulties. Please try again in a few m"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/packaging/debug",
+          "status_code": 200,
+          "response_time": 2049.393892288208,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/packaging/",
+          "status_code": 500,
+          "response_time": 34.012794494628906,
+          "success": false,
+          "response_preview": "{\"error\":\"We're experiencing technical difficulties. Please try again in a few m"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/packaging/manage-bulk",
+          "status_code": 400,
+          "response_time": 2059.2880249023438,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid action. Must be one of: ['publish', 'unpublish', 'update_pric"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/packaging/analytics",
+          "status_code": 200,
+          "response_time": 25.563478469848633,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/partnerships/request",
+          "status_code": 422,
+          "response_time": 24.036884307861328,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"business_type\"],\"msg\":\"Field require"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/partnerships/revenue",
+          "status_code": 422,
+          "response_time": 14.049530029296875,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"action\"],\"msg\":\"Field required\",\"inp"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/partnerships/dashboard",
+          "status_code": 422,
+          "response_time": 28.039216995239258,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\"],\"msg\":\"Field required\",\"input\":null}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:15.724774",
+      "avg_response_time": 534.0559482574463,
+      "end_time": "2025-09-03 11:30:20.918879",
+      "duration": 5.194105,
+      "success_rate": 25.0
+    },
+    {
+      "batch_number": 17,
+      "batch_name": "Billing & Payments",
+      "total_endpoints": 6,
+      "successful": 5,
+      "failed": 1,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/billing/tiers",
+          "status_code": 200,
+          "response_time": 52.06775665283203,
+          "success": true,
+          "response_preview": "Keys: tiers"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/billing/me/entitlements",
+          "status_code": 200,
+          "response_time": 40.81106185913086,
+          "success": true,
+          "response_preview": "Keys: plan, balance, monthlyCredits"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/payments/initiate-payment",
+          "status_code": 200,
+          "response_time": 1355.9396266937256,
+          "success": true,
+          "response_preview": "Keys: provider, payment_link, transaction_id"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/payments/webhooks/health",
+          "status_code": 200,
+          "response_time": 8.002519607543945,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/payments/webhooks/paddle",
+          "status_code": 503,
+          "response_time": 27.54354476928711,
+          "success": false,
+          "response_preview": "{\"detail\":\"Paddle webhook secret not configured\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/payments/webhooks/razorpay",
+          "status_code": 200,
+          "response_time": 25.53868293762207,
+          "success": true,
+          "response_preview": "[{'ok': False, 'error': 'Invalid signature'}, 401]"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:20.991428",
+      "avg_response_time": 251.65053208669028,
+      "end_time": "2025-09-03 11:30:23.158793",
+      "duration": 2.167365,
+      "success_rate": 83.33333333333334
+    },
+    {
+      "batch_number": 18,
+      "batch_name": "Credits Management",
+      "total_endpoints": 5,
+      "successful": 0,
+      "failed": 5,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/credits/dashboard",
+          "status_code": 401,
+          "response_time": 19.003629684448242,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/credits/usage/history",
+          "status_code": 401,
+          "response_time": 34.04116630554199,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/credits/analytics/routes",
+          "status_code": 401,
+          "response_time": 15.025854110717773,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/credits/predictions/usage",
+          "status_code": 401,
+          "response_time": 54.05545234680176,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/credits/admin/overview",
+          "status_code": 401,
+          "response_time": 200.18959045410156,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:23.194366",
+      "avg_response_time": 64.46313858032227,
+      "end_time": "2025-09-03 11:30:24.175796",
+      "duration": 0.98143,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 19,
+      "batch_name": "Notifications",
+      "total_endpoints": 10,
+      "successful": 4,
+      "failed": 6,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/notifications/preferences",
+          "status_code": 200,
+          "response_time": 20.54738998413086,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/notifications/preferences",
+          "status_code": 200,
+          "response_time": 74.57327842712402,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/notifications/",
+          "status_code": 200,
+          "response_time": 299.5285987854004,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/notifications/",
+          "status_code": 422,
+          "response_time": 38.20061683654785,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/notifications/test-notification-123/read",
+          "status_code": 404,
+          "response_time": 80.06501197814941,
+          "success": false,
+          "response_preview": "{\"detail\":\"Notification not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/notifications/mark-all-read",
+          "status_code": 200,
+          "response_time": 25.049686431884766,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/notifications/bulk",
+          "status_code": 422,
+          "response_time": 17.037391662597656,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "DELETE",
+          "endpoint": "/api/v1/notifications/test-notification-123",
+          "status_code": 500,
+          "response_time": 52.07467079162598,
+          "success": false,
+          "response_preview": "{\"detail\":\"Failed to delete notification: 404: Notification not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/notifications/push",
+          "status_code": 422,
+          "response_time": 18.022775650024414,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/notifications/analytics",
+          "status_code": 422,
+          "response_time": 11.538505554199219,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:24.181322",
+      "avg_response_time": 63.66379261016846,
+      "end_time": "2025-09-03 11:30:25.910648",
+      "duration": 1.729326,
+      "success_rate": 40.0
+    },
+    {
+      "batch_number": 20,
+      "batch_name": "Email Automation",
+      "total_endpoints": 11,
+      "successful": 0,
+      "failed": 11,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/send-welcome-sequence",
+          "status_code": 401,
+          "response_time": 38.01274299621582,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/send-retention-campaign",
+          "status_code": 401,
+          "response_time": 35.58802604675293,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/send-milestone-celebration",
+          "status_code": 401,
+          "response_time": 20.01643180847168,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/emails/user-preferences",
+          "status_code": 401,
+          "response_time": 23.538589477539062,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/emails/user-preferences",
+          "status_code": 401,
+          "response_time": 66.59960746765137,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/unsubscribe",
+          "status_code": 422,
+          "response_time": 106.09745979309082,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"email\"],\"msg\":\"Field required\",\"inp"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/emails/templates",
+          "status_code": 422,
+          "response_time": 24.014711380004883,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/templates",
+          "status_code": 422,
+          "response_time": 12.545585632324219,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/automation/trigger-credit-warning",
+          "status_code": 401,
+          "response_time": 24.524927139282227,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/automation/trigger-billing-reminder",
+          "status_code": 401,
+          "response_time": 13.133764266967773,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid token\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/emails/automation/trigger-feature-announcement",
+          "status_code": 422,
+          "response_time": 25.01678466796875,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:25.925190",
+      "avg_response_time": 35.37169369784269,
+      "end_time": "2025-09-03 11:30:27.456339",
+      "duration": 1.531149,
+      "success_rate": 0.0
+    },
+    {
+      "batch_number": 21,
+      "batch_name": "Admin & Fallbacks",
+      "total_endpoints": 3,
+      "successful": 2,
+      "failed": 1,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/admin/diagnostics",
+          "status_code": 403,
+          "response_time": 6.019830703735352,
+          "success": false,
+          "response_preview": "{\"detail\":\"Forbidden\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/analytics/events",
+          "status_code": 200,
+          "response_time": 66.06316566467285,
+          "success": true,
+          "response_preview": "Status: received"
+        },
+        {
+          "method": "POST",
+          "endpoint": "//analytics/events",
+          "status_code": 200,
+          "response_time": 24.042367935180664,
+          "success": true,
+          "response_preview": "Status: received"
+        }
+      ],
+      "start_time": "2025-09-03 11:30:29.967907",
+      "avg_response_time": 32.04178810119629,
+      "end_time": "2025-09-03 11:30:30.371837",
+      "duration": 0.40393,
+      "success_rate": 66.66666666666666
+    }
+  ],
+  "all_endpoint_results": [
+    {
+      "method": "GET",
+      "endpoint": "/",
+      "status_code": 200,
+      "response_time": 2413.564682006836,
+      "success": true,
+      "response_preview": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/health",
+      "status_code": 200,
+      "response_time": 25.53248405456543,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/health",
+      "status_code": 200,
+      "response_time": 29.06489372253418,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/debug/auth-headers",
+      "status_code": 200,
+      "response_time": 25.523662567138672,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/debug/test-auth",
+      "status_code": 200,
+      "response_time": 53.55405807495117,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/auth/complete",
+      "status_code": 200,
+      "response_time": 703.7880420684814,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me",
+      "status_code": 200,
+      "response_time": 45.53794860839844,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/me/profile",
+      "status_code": 200,
+      "response_time": 32.52601623535156,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/credits",
+      "status_code": 200,
+      "response_time": 65.09089469909668,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/preferences",
+      "status_code": 200,
+      "response_time": 96.07672691345215,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/preferences",
+      "status_code": 200,
+      "response_time": 51.061153411865234,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/stats",
+      "status_code": 200,
+      "response_time": 115.60988426208496,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me/usage",
+      "status_code": 200,
+      "response_time": 60.599327087402344,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/usage/track",
+      "status_code": 200,
+      "response_time": 30.0137996673584,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/export-data",
+      "status_code": 200,
+      "response_time": 186.1417293548584,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/arsenal",
+      "status_code": 404,
+      "response_time": 66.06578826904297,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/",
+      "status_code": 404,
+      "response_time": 105.99851608276367,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/public",
+      "status_code": 404,
+      "response_time": 37.08291053771973,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/test-drive-by-id",
+      "status_code": 404,
+      "response_time": 196.66099548339844,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/test-prompt-123",
+      "status_code": 404,
+      "response_time": 15.523910522460938,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/prompts/test-prompt-123",
+      "status_code": 404,
+      "response_time": 20.272254943847656,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/test-prompt-123/versions",
+      "status_code": 404,
+      "response_time": 67.4903392791748,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/bulk-action",
+      "status_code": 404,
+      "response_time": 28.109073638916016,
+      "success": false,
+      "response_preview": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/remix-prompt",
+      "status_code": 422,
+      "response_time": 45.06349563598633,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_body\"],\"msg\":\"Field required\""
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/architect-prompt",
+      "status_code": 422,
+      "response_time": 48.055171966552734,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"description\"],\"msg\":\"Field required\""
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/fuse-prompts",
+      "status_code": 422,
+      "response_time": 43.55907440185547,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/generate-enhanced-prompt",
+      "status_code": 422,
+      "response_time": 38.01393508911133,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/analyze-prompt",
+      "status_code": 422,
+      "response_time": 39.999961853027344,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"analysisType\"],\"msg\":\"Field required"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/search?q=business",
+      "status_code": 200,
+      "response_time": 26.0162353515625,
+      "success": true,
+      "response_preview": "Keys: listings, limit, offset"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/listings",
+      "status_code": 404,
+      "response_time": 98.64234924316406,
+      "success": false,
+      "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/my-listings",
+      "status_code": 200,
+      "response_time": 149.17945861816406,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/marketplace/list-prompt",
+      "status_code": 422,
+      "response_time": 20.066499710083008,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"price_credits\"],\"msg\":\"Field require"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/test-123",
+      "status_code": 404,
+      "response_time": 140.669584274292,
+      "success": false,
+      "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/preview/test-123",
+      "status_code": 500,
+      "response_time": 19.559144973754883,
+      "success": false,
+      "response_preview": "{\"detail\":\"Preview failed\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/marketplace/rate",
+      "status_code": 500,
+      "response_time": 73.07600975036621,
+      "success": false,
+      "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/test-123/reviews",
+      "status_code": 500,
+      "response_time": 2075.4647254943848,
+      "success": false,
+      "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/test-123/analytics",
+      "status_code": 500,
+      "response_time": 2074.277639389038,
+      "success": false,
+      "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/search/?q=email&type=prompts",
+      "status_code": 200,
+      "response_time": 2058.833122253418,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/search/users?q=test",
+      "status_code": 422,
+      "response_time": 13.000726699829102,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"query\"],\"msg\":\"Field required\",\"inp"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/projects/test-project-123",
+      "status_code": 404,
+      "response_time": 66.54930114746094,
+      "success": false,
+      "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/projects/test-project-123/prompts",
+      "status_code": 404,
+      "response_time": 69.56911087036133,
+      "success": false,
+      "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/projects/test-project-123/prompts",
+      "status_code": 404,
+      "response_time": 100.60524940490723,
+      "success": false,
+      "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/v1/projects/test-project-123",
+      "status_code": 404,
+      "response_time": 33.99491310119629,
+      "success": false,
+      "response_preview": "{\"detail\":\"Project 'test-project-123' not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/templates",
+      "status_code": 200,
+      "response_time": 25.015830993652344,
+      "success": true,
+      "response_preview": "Workflow templates retrieved successfully"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/templates",
+      "status_code": 403,
+      "response_time": 102.58030891418457,
+      "success": false,
+      "response_preview": "{\"detail\":\"Custom workflow templates require Pro+ plan\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/templates/test-template-123",
+      "status_code": 404,
+      "response_time": 120.18108367919922,
+      "success": false,
+      "response_preview": "{\"detail\":\"Template not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/start",
+      "status_code": 401,
+      "response_time": 47.85346984863281,
+      "success": false,
+      "response_preview": "{\"detail\":\"Authentication required\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/status/test-instance-123",
+      "status_code": 404,
+      "response_time": 44.28696632385254,
+      "success": false,
+      "response_preview": "{\"detail\":\"Workflow instance not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/results/test-instance-123",
+      "status_code": 404,
+      "response_time": 64.05043601989746,
+      "success": false,
+      "response_preview": "{\"detail\":\"Workflow instance not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/control/test-instance-123/pause",
+      "status_code": 400,
+      "response_time": 44.56305503845215,
+      "success": false,
+      "response_preview": "{\"detail\":\"Cannot pause workflow (not found or not running)\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/control/test-instance-123/resume",
+      "status_code": 400,
+      "response_time": 30.0137996673584,
+      "success": false,
+      "response_preview": "{\"detail\":\"Cannot resume workflow (not found or not paused)\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/control/test-instance-123/cancel",
+      "status_code": 400,
+      "response_time": 17.028331756591797,
+      "success": false,
+      "response_preview": "{\"detail\":\"Cannot cancel workflow (not found or not running)\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/my-workflows",
+      "status_code": 200,
+      "response_time": 43.55335235595703,
+      "success": true,
+      "response_preview": "User workflows retrieved successfully"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/quick-start/content-creation",
+      "status_code": 401,
+      "response_time": 51.56517028808594,
+      "success": false,
+      "response_preview": "{\"detail\":\"Authentication required\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/workflows/quick-start/code-review",
+      "status_code": 401,
+      "response_time": 38.00177574157715,
+      "success": false,
+      "response_preview": "{\"detail\":\"Authentication required\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/analytics/usage",
+      "status_code": 500,
+      "response_time": 21.523237228393555,
+      "success": false,
+      "response_preview": "{\"detail\":\"Failed to retrieve analytics\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/workflows/health",
+      "status_code": 200,
+      "response_time": 155.7002067565918,
+      "success": true,
+      "response_preview": "Workflow service is healthy"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/analytics/events",
+      "status_code": 200,
+      "response_time": 9.289264678955078,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/analytics/performance",
+      "status_code": 200,
+      "response_time": 39.61896896362305,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/analytics/dashboard",
+      "status_code": 200,
+      "response_time": 43.550729751586914,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/analytics/exports/prompts",
+      "status_code": 422,
+      "response_time": 47.54066467285156,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"export_type\"],\"msg\":\"Field required\""
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/analytics/exports/analytics",
+      "status_code": 422,
+      "response_time": 22.996902465820312,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"export_type\"],\"msg\":\"Field required\""
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/analytics/jobs/analytics",
+      "status_code": 422,
+      "response_time": 43.55311393737793,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"job_type\"],\"msg\":\"Field required\",\"i"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/analytics/jobs/analytics/test-job-123/status",
+      "status_code": 404,
+      "response_time": 62.55698204040527,
+      "success": false,
+      "response_preview": "{\"detail\":\"Job not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/monitoring/health",
+      "status_code": 200,
+      "response_time": 62.07776069641113,
+      "success": true,
+      "response_preview": "Status: healthy"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/monitoring/health/detailed",
+      "status_code": 401,
+      "response_time": 67.52228736877441,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/monitoring/metrics",
+      "status_code": 401,
+      "response_time": 177.10471153259277,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/monitoring/trace/test-request-123",
+      "status_code": 401,
+      "response_time": 74.07832145690918,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/monitoring/circuit-breakers",
+      "status_code": 401,
+      "response_time": 25.855302810668945,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/monitoring/circuit-breakers/test-breaker/reset",
+      "status_code": 401,
+      "response_time": 72.44491577148438,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/performance/dashboard",
+      "status_code": 422,
+      "response_time": 44.6014404296875,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/performance/slow-queries",
+      "status_code": 422,
+      "response_time": 19.001007080078125,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/performance/cache-stats",
+      "status_code": 422,
+      "response_time": 21.018028259277344,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/performance/optimize",
+      "status_code": 422,
+      "response_time": 39.0019416809082,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/v1/performance/cache",
+      "status_code": 422,
+      "response_time": 28.049468994140625,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/performance/health",
+      "status_code": 200,
+      "response_time": 81.00056648254395,
+      "success": true,
+      "response_preview": "Status: degraded"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/intelligence/analyze",
+      "status_code": 401,
+      "response_time": 7.012844085693359,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/intelligence/suggestions/quick?prompt=email",
+      "status_code": 401,
+      "response_time": 36.54789924621582,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/intelligence/templates/personalized?category=business",
+      "status_code": 401,
+      "response_time": 45.16124725341797,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/intelligence/patterns/user",
+      "status_code": 401,
+      "response_time": 47.25003242492676,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/intelligence/feedback",
+      "status_code": 401,
+      "response_time": 53.55334281921387,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/intelligence/analytics/intelligence",
+      "status_code": 401,
+      "response_time": 43.59602928161621,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/context/analyze",
+      "status_code": 401,
+      "response_time": 17.000913619995117,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/context/quick-suggestions",
+      "status_code": 401,
+      "response_time": 36.53836250305176,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/context/follow-up-questions",
+      "status_code": 401,
+      "response_time": 38.14888000488281,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/context/enhancement-templates",
+      "status_code": 401,
+      "response_time": 49.89218711853027,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/context/domain-insights",
+      "status_code": 401,
+      "response_time": 24.579524993896484,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/extension/analyze-prompt",
+      "status_code": 401,
+      "response_time": 47.548770904541016,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/extension/suggestions/contextual",
+      "status_code": 401,
+      "response_time": 25.537729263305664,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/extension/enhance/selected-text",
+      "status_code": 401,
+      "response_time": 30.672311782836914,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/extension/templates/smart",
+      "status_code": 401,
+      "response_time": 49.0720272064209,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/extension/health",
+      "status_code": 200,
+      "response_time": 37.068843841552734,
+      "success": true,
+      "response_preview": "Status: healthy"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/extension/usage-stats",
+      "status_code": 401,
+      "response_time": 28.540611267089844,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompt/quick_upgrade",
+      "status_code": 401,
+      "response_time": 23.018360137939453,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompt/upgrade",
+      "status_code": 401,
+      "response_time": 49.523353576660156,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/demon/route",
+      "status_code": 401,
+      "response_time": 49.544572830200195,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/demon/v2/upgrade",
+      "status_code": 401,
+      "response_time": 27.5423526763916,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/vault/arsenal",
+      "status_code": 200,
+      "response_time": 99.68829154968262,
+      "success": true,
+      "response_preview": "Keys: prompts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/vault/search?q=email",
+      "status_code": 200,
+      "response_time": 34.583091735839844,
+      "success": true,
+      "response_preview": "Keys: prompts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/vault/save",
+      "status_code": 400,
+      "response_time": 26.077985763549805,
+      "success": false,
+      "response_preview": "{\"detail\":\"Missing prompt text or upgraded version\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/vault/list",
+      "status_code": 200,
+      "response_time": 211.151123046875,
+      "success": true,
+      "response_preview": "Keys: prompts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/vault/test-vault-123/test-drive",
+      "status_code": 400,
+      "response_time": 20.046234130859375,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/vault/test-vault-123/versions",
+      "status_code": 400,
+      "response_time": 35.07566452026367,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/v1/vault/delete/test-vault-123",
+      "status_code": 400,
+      "response_time": 183.15458297729492,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ideas/generate",
+      "status_code": 422,
+      "response_time": 70.52803039550781,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"categories\"],\"msg\":\"Field required\","
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/packaging/test-prompt-123/package",
+      "status_code": 500,
+      "response_time": 38.063764572143555,
+      "success": false,
+      "response_preview": "{\"error\":\"We're experiencing technical difficulties. Please try again in a few m"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/packaging/debug",
+      "status_code": 200,
+      "response_time": 2049.393892288208,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/packaging/",
+      "status_code": 500,
+      "response_time": 34.012794494628906,
+      "success": false,
+      "response_preview": "{\"error\":\"We're experiencing technical difficulties. Please try again in a few m"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/packaging/manage-bulk",
+      "status_code": 400,
+      "response_time": 2059.2880249023438,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid action. Must be one of: ['publish', 'unpublish', 'update_pric"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/packaging/analytics",
+      "status_code": 200,
+      "response_time": 25.563478469848633,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/partnerships/request",
+      "status_code": 422,
+      "response_time": 24.036884307861328,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"business_type\"],\"msg\":\"Field require"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/partnerships/revenue",
+      "status_code": 422,
+      "response_time": 14.049530029296875,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"action\"],\"msg\":\"Field required\",\"inp"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/partnerships/dashboard",
+      "status_code": 422,
+      "response_time": 28.039216995239258,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\"],\"msg\":\"Field required\",\"input\":null}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/billing/tiers",
+      "status_code": 200,
+      "response_time": 52.06775665283203,
+      "success": true,
+      "response_preview": "Keys: tiers"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/billing/me/entitlements",
+      "status_code": 200,
+      "response_time": 40.81106185913086,
+      "success": true,
+      "response_preview": "Keys: plan, balance, monthlyCredits"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/payments/initiate-payment",
+      "status_code": 200,
+      "response_time": 1355.9396266937256,
+      "success": true,
+      "response_preview": "Keys: provider, payment_link, transaction_id"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/payments/webhooks/health",
+      "status_code": 200,
+      "response_time": 8.002519607543945,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/payments/webhooks/paddle",
+      "status_code": 503,
+      "response_time": 27.54354476928711,
+      "success": false,
+      "response_preview": "{\"detail\":\"Paddle webhook secret not configured\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/payments/webhooks/razorpay",
+      "status_code": 200,
+      "response_time": 25.53868293762207,
+      "success": true,
+      "response_preview": "[{'ok': False, 'error': 'Invalid signature'}, 401]"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/credits/dashboard",
+      "status_code": 401,
+      "response_time": 19.003629684448242,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/credits/usage/history",
+      "status_code": 401,
+      "response_time": 34.04116630554199,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/credits/analytics/routes",
+      "status_code": 401,
+      "response_time": 15.025854110717773,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/credits/predictions/usage",
+      "status_code": 401,
+      "response_time": 54.05545234680176,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/credits/admin/overview",
+      "status_code": 401,
+      "response_time": 200.18959045410156,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/notifications/preferences",
+      "status_code": 200,
+      "response_time": 20.54738998413086,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/notifications/preferences",
+      "status_code": 200,
+      "response_time": 74.57327842712402,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/notifications/",
+      "status_code": 200,
+      "response_time": 299.5285987854004,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/notifications/",
+      "status_code": 422,
+      "response_time": 38.20061683654785,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/notifications/test-notification-123/read",
+      "status_code": 404,
+      "response_time": 80.06501197814941,
+      "success": false,
+      "response_preview": "{\"detail\":\"Notification not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/notifications/mark-all-read",
+      "status_code": 200,
+      "response_time": 25.049686431884766,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/notifications/bulk",
+      "status_code": 422,
+      "response_time": 17.037391662597656,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/v1/notifications/test-notification-123",
+      "status_code": 500,
+      "response_time": 52.07467079162598,
+      "success": false,
+      "response_preview": "{\"detail\":\"Failed to delete notification: 404: Notification not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/notifications/push",
+      "status_code": 422,
+      "response_time": 18.022775650024414,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/notifications/analytics",
+      "status_code": 422,
+      "response_time": 11.538505554199219,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/send-welcome-sequence",
+      "status_code": 401,
+      "response_time": 38.01274299621582,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/send-retention-campaign",
+      "status_code": 401,
+      "response_time": 35.58802604675293,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/send-milestone-celebration",
+      "status_code": 401,
+      "response_time": 20.01643180847168,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/emails/user-preferences",
+      "status_code": 401,
+      "response_time": 23.538589477539062,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/emails/user-preferences",
+      "status_code": 401,
+      "response_time": 66.59960746765137,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/unsubscribe",
+      "status_code": 422,
+      "response_time": 106.09745979309082,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"email\"],\"msg\":\"Field required\",\"inp"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/emails/templates",
+      "status_code": 422,
+      "response_time": 24.014711380004883,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/templates",
+      "status_code": 422,
+      "response_time": 12.545585632324219,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/automation/trigger-credit-warning",
+      "status_code": 401,
+      "response_time": 24.524927139282227,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/automation/trigger-billing-reminder",
+      "status_code": 401,
+      "response_time": 13.133764266967773,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid token\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/emails/automation/trigger-feature-announcement",
+      "status_code": 422,
+      "response_time": 25.01678466796875,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"f\"],\"msg\":\"Field required\",\"input\":"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/admin/diagnostics",
+      "status_code": 403,
+      "response_time": 6.019830703735352,
+      "success": false,
+      "response_preview": "{\"detail\":\"Forbidden\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/analytics/events",
+      "status_code": 200,
+      "response_time": 66.06316566467285,
+      "success": true,
+      "response_preview": "Status: received"
+    },
+    {
+      "method": "POST",
+      "endpoint": "//analytics/events",
+      "status_code": 200,
+      "response_time": 24.042367935180664,
+      "success": true,
+      "response_preview": "Status: received"
+    }
+  ]
+}

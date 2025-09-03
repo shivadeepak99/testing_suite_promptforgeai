@@ -1,0 +1,506 @@
+{
+  "test_run": {
+    "timestamp": "2025-09-03T11:58:30.768174",
+    "base_url": "http://localhost:8000",
+    "total_batches": 4,
+    "total_endpoints": 27
+  },
+  "overall_stats": {
+    "successful": 17,
+    "failed": 10,
+    "success_rate": 62.96296296296296,
+    "avg_response_time": 146.05708475466128
+  },
+  "batch_results": [
+    {
+      "batch_number": 1,
+      "batch_name": "Health & Debug",
+      "total_endpoints": 5,
+      "successful": 5,
+      "failed": 0,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/",
+          "status_code": 200,
+          "response_time": 2060.4207515716553,
+          "success": true,
+          "response_preview": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/health",
+          "status_code": 200,
+          "response_time": 14.015913009643555,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/health",
+          "status_code": 200,
+          "response_time": 15.531539916992188,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/debug/auth-headers",
+          "status_code": 200,
+          "response_time": 13.532161712646484,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/debug/test-auth",
+          "status_code": 200,
+          "response_time": 13.556480407714844,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 11:58:23.855917",
+      "avg_response_time": 423.41136932373047,
+      "end_time": "2025-09-03 11:58:26.484412",
+      "duration": 2.628495,
+      "success_rate": 100.0
+    },
+    {
+      "batch_number": 2,
+      "batch_name": "User Management",
+      "total_endpoints": 10,
+      "successful": 10,
+      "failed": 0,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/users/auth/complete",
+          "status_code": 200,
+          "response_time": 718.4927463531494,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/me",
+          "status_code": 200,
+          "response_time": 67.1083927154541,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/users/me/profile",
+          "status_code": 200,
+          "response_time": 19.536972045898438,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/credits",
+          "status_code": 200,
+          "response_time": 66.16616249084473,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/preferences",
+          "status_code": 200,
+          "response_time": 27.00066566467285,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/users/preferences",
+          "status_code": 200,
+          "response_time": 48.99787902832031,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/stats",
+          "status_code": 200,
+          "response_time": 70.12820243835449,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/me/usage",
+          "status_code": 200,
+          "response_time": 52.54864692687988,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/users/usage/track",
+          "status_code": 200,
+          "response_time": 51.55301094055176,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/export-data",
+          "status_code": 200,
+          "response_time": 98.13046455383301,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 11:58:26.628549",
+      "avg_response_time": 121.9663143157959,
+      "end_time": "2025-09-03 11:58:28.900205",
+      "duration": 2.271656,
+      "success_rate": 100.0
+    },
+    {
+      "batch_number": 3,
+      "batch_name": "Core Prompts",
+      "total_endpoints": 8,
+      "successful": 2,
+      "failed": 6,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/arsenal",
+          "status_code": 200,
+          "response_time": 106.58478736877441,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/",
+          "status_code": 422,
+          "response_time": 21.895885467529297,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"body\"],\"msg\":\"Field required\",\"input"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/public",
+          "status_code": 200,
+          "response_time": 52.11758613586426,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/test-drive-by-id",
+          "status_code": 404,
+          "response_time": 73.59600067138672,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found in your arsenal.\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/test-prompt-123",
+          "status_code": 404,
+          "response_time": 121.16551399230957,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found\"}"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/prompts/test-prompt-123",
+          "status_code": 422,
+          "response_time": 53.067684173583984,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"body\"],\"msg\":\"Field required\",\"input"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/test-prompt-123/versions",
+          "status_code": 404,
+          "response_time": 73.68326187133789,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/bulk-action",
+          "status_code": 400,
+          "response_time": 20.255088806152344,
+          "success": false,
+          "response_preview": "{\"detail\":\"Missing tags for tag action\"}"
+        }
+      ],
+      "start_time": "2025-09-03 11:58:28.921217",
+      "avg_response_time": 65.29572606086731,
+      "end_time": "2025-09-03 11:58:30.326917",
+      "duration": 1.4057,
+      "success_rate": 25.0
+    },
+    {
+      "batch_number": 4,
+      "batch_name": "AI Features",
+      "total_endpoints": 5,
+      "successful": 0,
+      "failed": 4,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/remix-prompt",
+          "status_code": 422,
+          "response_time": 26.639938354492188,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_body\"],\"msg\":\"Field required\""
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/architect-prompt",
+          "status_code": 422,
+          "response_time": 20.531654357910156,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"description\"],\"msg\":\"Field required\""
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/fuse-prompts",
+          "status_code": 422,
+          "response_time": 15.024185180664062,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/generate-enhanced-prompt",
+          "status_code": 422,
+          "response_time": 22.25971221923828,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+        }
+      ],
+      "start_time": "2025-09-03 11:58:30.357770",
+      "avg_response_time": 12.439155578613281,
+      "end_time": "2025-09-03 11:58:30.751715",
+      "duration": 0.393945,
+      "success_rate": 0.0
+    }
+  ],
+  "all_endpoint_results": [
+    {
+      "method": "GET",
+      "endpoint": "/",
+      "status_code": 200,
+      "response_time": 2060.4207515716553,
+      "success": true,
+      "response_preview": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/health",
+      "status_code": 200,
+      "response_time": 14.015913009643555,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/health",
+      "status_code": 200,
+      "response_time": 15.531539916992188,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/debug/auth-headers",
+      "status_code": 200,
+      "response_time": 13.532161712646484,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/debug/test-auth",
+      "status_code": 200,
+      "response_time": 13.556480407714844,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/auth/complete",
+      "status_code": 200,
+      "response_time": 718.4927463531494,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me",
+      "status_code": 200,
+      "response_time": 67.1083927154541,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/me/profile",
+      "status_code": 200,
+      "response_time": 19.536972045898438,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/credits",
+      "status_code": 200,
+      "response_time": 66.16616249084473,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/preferences",
+      "status_code": 200,
+      "response_time": 27.00066566467285,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/preferences",
+      "status_code": 200,
+      "response_time": 48.99787902832031,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/stats",
+      "status_code": 200,
+      "response_time": 70.12820243835449,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me/usage",
+      "status_code": 200,
+      "response_time": 52.54864692687988,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/usage/track",
+      "status_code": 200,
+      "response_time": 51.55301094055176,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/export-data",
+      "status_code": 200,
+      "response_time": 98.13046455383301,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/arsenal",
+      "status_code": 200,
+      "response_time": 106.58478736877441,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/",
+      "status_code": 422,
+      "response_time": 21.895885467529297,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"body\"],\"msg\":\"Field required\",\"input"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/public",
+      "status_code": 200,
+      "response_time": 52.11758613586426,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/test-drive-by-id",
+      "status_code": 404,
+      "response_time": 73.59600067138672,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found in your arsenal.\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/test-prompt-123",
+      "status_code": 404,
+      "response_time": 121.16551399230957,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found\"}"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/prompts/test-prompt-123",
+      "status_code": 422,
+      "response_time": 53.067684173583984,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"body\"],\"msg\":\"Field required\",\"input"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/test-prompt-123/versions",
+      "status_code": 404,
+      "response_time": 73.68326187133789,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/bulk-action",
+      "status_code": 400,
+      "response_time": 20.255088806152344,
+      "success": false,
+      "response_preview": "{\"detail\":\"Missing tags for tag action\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/remix-prompt",
+      "status_code": 422,
+      "response_time": 26.639938354492188,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_body\"],\"msg\":\"Field required\""
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/architect-prompt",
+      "status_code": 422,
+      "response_time": 20.531654357910156,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"description\"],\"msg\":\"Field required\""
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/fuse-prompts",
+      "status_code": 422,
+      "response_time": 15.024185180664062,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/generate-enhanced-prompt",
+      "status_code": 422,
+      "response_time": 22.25971221923828,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+    }
+  ]
+}

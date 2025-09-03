@@ -1,0 +1,648 @@
+{
+  "test_run": {
+    "timestamp": "2025-09-03T16:36:26.032239",
+    "base_url": "http://localhost:8000",
+    "total_batches": 5,
+    "total_endpoints": 35
+  },
+  "overall_stats": {
+    "successful": 25,
+    "failed": 10,
+    "success_rate": 71.42857142857143,
+    "avg_response_time": 229.07629013061523
+  },
+  "batch_results": [
+    {
+      "batch_number": 1,
+      "batch_name": "Health & Debug",
+      "total_endpoints": 5,
+      "successful": 5,
+      "failed": 0,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/",
+          "status_code": 200,
+          "response_time": 2071.6466903686523,
+          "success": true,
+          "response_preview": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/health",
+          "status_code": 200,
+          "response_time": 9.022951126098633,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/health",
+          "status_code": 200,
+          "response_time": 17.522335052490234,
+          "success": true,
+          "response_preview": "Status: ok"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/debug/auth-headers",
+          "status_code": 200,
+          "response_time": 20.21956443786621,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/debug/test-auth",
+          "status_code": 200,
+          "response_time": 11.014699935913086,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 16:36:14.352637",
+      "avg_response_time": 425.8852481842041,
+      "end_time": "2025-09-03 16:36:16.986930",
+      "duration": 2.634293,
+      "success_rate": 100.0
+    },
+    {
+      "batch_number": 2,
+      "batch_name": "User Management",
+      "total_endpoints": 10,
+      "successful": 10,
+      "failed": 0,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/users/auth/complete",
+          "status_code": 200,
+          "response_time": 658.4351062774658,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/me",
+          "status_code": 200,
+          "response_time": 20.543336868286133,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/users/me/profile",
+          "status_code": 200,
+          "response_time": 9.059906005859375,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/credits",
+          "status_code": 200,
+          "response_time": 37.53089904785156,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/preferences",
+          "status_code": 200,
+          "response_time": 23.52428436279297,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/users/preferences",
+          "status_code": 200,
+          "response_time": 26.05414390563965,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/stats",
+          "status_code": 200,
+          "response_time": 80.56402206420898,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/me/usage",
+          "status_code": 200,
+          "response_time": 173.62332344055176,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/users/usage/track",
+          "status_code": 200,
+          "response_time": 127.60138511657715,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/users/export-data",
+          "status_code": 200,
+          "response_time": 151.35836601257324,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 16:36:16.987943",
+      "avg_response_time": 130.82947731018066,
+      "end_time": "2025-09-03 16:36:19.343431",
+      "duration": 2.355488,
+      "success_rate": 100.0
+    },
+    {
+      "batch_number": 3,
+      "batch_name": "Core Prompts",
+      "total_endpoints": 8,
+      "successful": 4,
+      "failed": 4,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/arsenal",
+          "status_code": 200,
+          "response_time": 28.55062484741211,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/",
+          "status_code": 200,
+          "response_time": 102.06985473632812,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/public",
+          "status_code": 200,
+          "response_time": 29.582977294921875,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/test-drive-by-id",
+          "status_code": 404,
+          "response_time": 58.06398391723633,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found in your arsenal.\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/test-prompt-123",
+          "status_code": 404,
+          "response_time": 49.61824417114258,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found\"}"
+        },
+        {
+          "method": "PUT",
+          "endpoint": "/api/v1/prompts/test-prompt-123",
+          "status_code": 404,
+          "response_time": 34.00540351867676,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/prompts/test-prompt-123/versions",
+          "status_code": 404,
+          "response_time": 30.52687644958496,
+          "success": false,
+          "response_preview": "{\"detail\":\"Prompt not found\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/prompts/bulk-action",
+          "status_code": 200,
+          "response_time": 181.1234951019287,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 16:36:19.371963",
+      "avg_response_time": 64.19268250465393,
+      "end_time": "2025-09-03 16:36:20.727647",
+      "duration": 1.355684,
+      "success_rate": 50.0
+    },
+    {
+      "batch_number": 4,
+      "batch_name": "AI Features",
+      "total_endpoints": 5,
+      "successful": 4,
+      "failed": 1,
+      "results": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/remix-prompt",
+          "status_code": 200,
+          "response_time": 1022.7799415588379,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/architect-prompt",
+          "status_code": 200,
+          "response_time": 1289.0727519989014,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/fuse-prompts",
+          "status_code": 200,
+          "response_time": 333.5304260253906,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/generate-enhanced-prompt",
+          "status_code": 422,
+          "response_time": 28.53250503540039,
+          "success": false,
+          "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/ai/analyze-prompt",
+          "status_code": 200,
+          "response_time": 568.2625770568848,
+          "success": true,
+          "response_preview": "Status: success"
+        }
+      ],
+      "start_time": "2025-09-03 16:36:20.744706",
+      "avg_response_time": 648.435640335083,
+      "end_time": "2025-09-03 16:36:24.504259",
+      "duration": 3.759553,
+      "success_rate": 80.0
+    },
+    {
+      "batch_number": 5,
+      "batch_name": "Marketplace Core",
+      "total_endpoints": 9,
+      "successful": 2,
+      "failed": 5,
+      "results": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/search?q=business",
+          "status_code": 200,
+          "response_time": 70.04380226135254,
+          "success": true,
+          "response_preview": "Keys: listings, limit, offset"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/listings",
+          "status_code": 404,
+          "response_time": 44.05546188354492,
+          "success": false,
+          "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/my-listings",
+          "status_code": 200,
+          "response_time": 119.59409713745117,
+          "success": true,
+          "response_preview": "Status: success"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/marketplace/list-prompt",
+          "status_code": 400,
+          "response_time": 165.13752937316895,
+          "success": false,
+          "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/test-123",
+          "status_code": 404,
+          "response_time": 48.53391647338867,
+          "success": false,
+          "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/marketplace/preview/test-123",
+          "status_code": 500,
+          "response_time": 23.521900177001953,
+          "success": false,
+          "response_preview": "{\"detail\":\"Preview failed\"}"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/marketplace/rate",
+          "status_code": 500,
+          "response_time": 353.34277153015137,
+          "success": false,
+          "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+        }
+      ],
+      "start_time": "2025-09-03 16:36:24.518279",
+      "avg_response_time": 52.32074525621202,
+      "end_time": "2025-09-03 16:36:26.011225",
+      "duration": 1.492946,
+      "success_rate": 22.22222222222222
+    }
+  ],
+  "all_endpoint_results": [
+    {
+      "method": "GET",
+      "endpoint": "/",
+      "status_code": 200,
+      "response_time": 2071.6466903686523,
+      "success": true,
+      "response_preview": "Welcome to the PromptForge API ! \ud83e\udd70\ud83e\udd70"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/health",
+      "status_code": 200,
+      "response_time": 9.022951126098633,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/health",
+      "status_code": 200,
+      "response_time": 17.522335052490234,
+      "success": true,
+      "response_preview": "Status: ok"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/debug/auth-headers",
+      "status_code": 200,
+      "response_time": 20.21956443786621,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/debug/test-auth",
+      "status_code": 200,
+      "response_time": 11.014699935913086,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/auth/complete",
+      "status_code": 200,
+      "response_time": 658.4351062774658,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me",
+      "status_code": 200,
+      "response_time": 20.543336868286133,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/me/profile",
+      "status_code": 200,
+      "response_time": 9.059906005859375,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/credits",
+      "status_code": 200,
+      "response_time": 37.53089904785156,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/preferences",
+      "status_code": 200,
+      "response_time": 23.52428436279297,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/users/preferences",
+      "status_code": 200,
+      "response_time": 26.05414390563965,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/stats",
+      "status_code": 200,
+      "response_time": 80.56402206420898,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/me/usage",
+      "status_code": 200,
+      "response_time": 173.62332344055176,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/users/usage/track",
+      "status_code": 200,
+      "response_time": 127.60138511657715,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/users/export-data",
+      "status_code": 200,
+      "response_time": 151.35836601257324,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/arsenal",
+      "status_code": 200,
+      "response_time": 28.55062484741211,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/",
+      "status_code": 200,
+      "response_time": 102.06985473632812,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/public",
+      "status_code": 200,
+      "response_time": 29.582977294921875,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/test-drive-by-id",
+      "status_code": 404,
+      "response_time": 58.06398391723633,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found in your arsenal.\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/test-prompt-123",
+      "status_code": 404,
+      "response_time": 49.61824417114258,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found\"}"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/v1/prompts/test-prompt-123",
+      "status_code": 404,
+      "response_time": 34.00540351867676,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/prompts/test-prompt-123/versions",
+      "status_code": 404,
+      "response_time": 30.52687644958496,
+      "success": false,
+      "response_preview": "{\"detail\":\"Prompt not found\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/prompts/bulk-action",
+      "status_code": 200,
+      "response_time": 181.1234951019287,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/remix-prompt",
+      "status_code": 200,
+      "response_time": 1022.7799415588379,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/architect-prompt",
+      "status_code": 200,
+      "response_time": 1289.0727519989014,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/fuse-prompts",
+      "status_code": 200,
+      "response_time": 333.5304260253906,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/generate-enhanced-prompt",
+      "status_code": 422,
+      "response_time": 28.53250503540039,
+      "success": false,
+      "response_preview": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"prompt_a\"],\"msg\":\"Field required\",\"i"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/ai/analyze-prompt",
+      "status_code": 200,
+      "response_time": 568.2625770568848,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/search?q=business",
+      "status_code": 200,
+      "response_time": 70.04380226135254,
+      "success": true,
+      "response_preview": "Keys: listings, limit, offset"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/listings",
+      "status_code": 404,
+      "response_time": 44.05546188354492,
+      "success": false,
+      "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/my-listings",
+      "status_code": 200,
+      "response_time": 119.59409713745117,
+      "success": true,
+      "response_preview": "Status: success"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/marketplace/list-prompt",
+      "status_code": 400,
+      "response_time": 165.13752937316895,
+      "success": false,
+      "response_preview": "{\"detail\":\"Invalid prompt_id\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/test-123",
+      "status_code": 404,
+      "response_time": 48.53391647338867,
+      "success": false,
+      "response_preview": "{\"detail\":\"Marketplace prompt not found\"}"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/v1/marketplace/preview/test-123",
+      "status_code": 500,
+      "response_time": 23.521900177001953,
+      "success": false,
+      "response_preview": "{\"detail\":\"Preview failed\"}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/v1/marketplace/rate",
+      "status_code": 500,
+      "response_time": 353.34277153015137,
+      "success": false,
+      "response_preview": "{\"error\":\"An unexpected error occurred. Our team has been notified.\",\"error_id\":"
+    }
+  ]
+}
